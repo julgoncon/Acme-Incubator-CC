@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import acme.entities.accountingRecord.AccountingRecord;
 import acme.entities.activity.Activity;
 import acme.entities.application.Application;
+import acme.entities.demand.Demand;
 import acme.entities.forum.Forum;
 import acme.entities.investmentRound.InvestmentRound;
 import acme.entities.roles.Entrepreneur;
@@ -16,6 +17,7 @@ import acme.features.authenticated.forum.AuthenticatedForumRepository;
 import acme.features.entrepreneur.accountingRecord.EntrepreneurAccountingRecordRepository;
 import acme.features.entrepreneur.activity.EntrepreneurActivityRepository;
 import acme.features.entrepreneur.application.EntrepreneurApplicationRepository;
+import acme.features.entrepreneur.demand.EntrepreneurDemandRepository;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
@@ -39,6 +41,9 @@ public class EntrepreneurInvestmentRoundDeleteService implements AbstractDeleteS
 
 	@Autowired
 	AuthenticatedForumRepository			forumRepository;
+
+	@Autowired
+	EntrepreneurDemandRepository			demandRepository;
 
 
 	@Override
@@ -116,8 +121,12 @@ public class EntrepreneurInvestmentRoundDeleteService implements AbstractDeleteS
 		this.applicationRepository.deleteAll(applications);
 		Collection<AccountingRecord> ac = this.repository.accountingrecordsByInvestmentRoundId(entity.getId());
 		this.accountingRecordRepository.deleteAll(ac);
-
+		Demand demand = this.repository.findDemandByInvestmentRoundId(entity.getId());
+		if (demand != null) {
+			this.demandRepository.delete(demand);
+		}
 		this.repository.delete(entity);
+
 	}
 
 }

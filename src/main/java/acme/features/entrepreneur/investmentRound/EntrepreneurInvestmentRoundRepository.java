@@ -10,6 +10,7 @@ import acme.entities.accountingRecord.AccountingRecord;
 import acme.entities.activity.Activity;
 import acme.entities.application.Application;
 import acme.entities.customisationParameters.CustomisationParameter;
+import acme.entities.demand.Demand;
 import acme.entities.forum.Forum;
 import acme.entities.investmentRound.InvestmentRound;
 import acme.entities.roles.Entrepreneur;
@@ -63,5 +64,8 @@ public interface EntrepreneurInvestmentRoundRepository extends AbstractRepositor
 
 	@Query("select a from Authenticated a where a.userAccount.id = ?1")
 	Authenticated findOneAuthById(int id);
+
+	@Query("select d from Demand d where d.investmentRound.id = ?1")
+	Demand findDemandByInvestmentRoundId(int id);
 
 }

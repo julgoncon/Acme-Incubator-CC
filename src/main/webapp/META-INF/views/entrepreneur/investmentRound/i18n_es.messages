@@ -30,6 +30,8 @@ entrepreneur.investmentRound.error.amountMoneyOver0=La cantidad de dinero debe s
 
 entrepreneur.investmentRound.error.differentAmount=La suma de dinero de las actividades debe ser la misma que la cantidad de dinero de la ronda de inversión
 
+entrepreneur.investmentRound.form.button.demand= Demand
+entrepreneur.investmentRound.form.button.demandCreate=Crear demand
 
 entrepreneur.investmentRound.button.create= Crear
 entrepreneur.investmentRound.button.update=Actualizar

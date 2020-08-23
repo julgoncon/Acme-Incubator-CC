@@ -73,8 +73,13 @@ public class EntrepreneurInvestmentRoundUpdateService implements AbstractUpdateS
 		assert request != null;
 		assert entity != null;
 		assert model != null;
+		int demandId = 0;
 
 		int investmentId = request.getModel().getInteger("id");
+		boolean hasDemand = this.repository.findDemandByInvestmentRoundId(entity.getId()) != null;
+		if (hasDemand) {
+			demandId = this.repository.findDemandByInvestmentRoundId(entity.getId()).getId();
+		}
 		int activities = this.repository.findActivitiesByInvestmentRound(investmentId).size();
 		Integer applications = this.repository.countApplicationsByInvestmentRoundId(investmentId);
 		int accountingRecords = this.repository.findAccountingRecordsByInvestmentRound(investmentId).size();
@@ -83,6 +88,10 @@ public class EntrepreneurInvestmentRoundUpdateService implements AbstractUpdateS
 		model.setAttribute("activities", activities);
 		model.setAttribute("applications", applications);
 		model.setAttribute("accountingRecords", accountingRecords);
+		model.setAttribute("hasDemand", hasDemand);
+		if (hasDemand) {
+			model.setAttribute("demandId", demandId);
+		}
 
 	}
 

@@ -1,0 +1,16 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+entrepreneur.demand.form.label.text = Text:
+entrepreneur.demand.list.label.text= Text
+entrepreneur.demand.form.button.create= Create
+entrepreneur.demand.form.button.update= Update
+entrepreneur.demand.form.button.delete= Delete
+entrepreneur.demand.form.button.return= Return

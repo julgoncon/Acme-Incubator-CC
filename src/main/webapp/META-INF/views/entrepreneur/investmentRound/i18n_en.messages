@@ -28,11 +28,12 @@ entrepreneur.investmentRound.button.list.activities= Activities list
 entrepreneur.investmentRound.button.create.activities= Create activity
 entrepreneur.investmentRound.error.amountMoney=The amount of money must be € or EUR
 entrepreneur.investmentRound.error.amountMoneyOver0=The amount of money must higher than 0.0
-
 entrepreneur.investmentRound.error.differentAmount=The total money from the activities must be equal to the amount of money of the investment round
 entrepreneur.investmentRound.button.create=Create
 entrepreneur.investmentRound.button.update=Update
 entrepreneur.investmentRound.button.delete=Delete
 
+entrepreneur.investmentRound.form.button.demand= Demand
+entrepreneur.investmentRound.form.button.demandCreate=Create demand
 
 entrepreneur.investmentRound.button.return= Return

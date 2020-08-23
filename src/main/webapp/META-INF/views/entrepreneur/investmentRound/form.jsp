@@ -9,6 +9,9 @@
 	<acme:form-hidden path="applications" />
 	<acme:form-hidden path="investmentId" />
 	<acme:form-hidden path="accountingRecords" />
+	<acme:form-hidden path="hasDemand" />
+	<acme:form-hidden path="demandId" />
+	
 	<jstl:if test="${command == 'create'}">
 		<acme:form-hidden path="finalMode" />
 	</jstl:if>
@@ -43,5 +46,11 @@
 	<acme:form-submit test="${command != 'create' && accountingRecords > 0}" code="entrepreneur.investmentRound.button.accountingRecord" method="get"
 		action="/entrepreneur/accounting-record/list-investment?investmentId=${investmentId}"/>
 	
+	<acme:form-submit test="${command != 'create' && hasDemand==true}" method="get"
+		code="entrepreneur.investmentRound.form.button.demand" 
+		action="/entrepreneur/demand/show?id=${demandId}"/>
+	<acme:form-submit test="${command != 'create' && hasDemand==false}" method="get"
+		code="entrepreneur.investmentRound.form.button.demandCreate" 
+		action="/entrepreneur/demand/create?investmentId=${investmentId}"/>
 	<acme:form-return code="entrepreneur.investmentRound.button.return"/>	
 </acme:form>
