@@ -12,7 +12,9 @@ import acme.entities.application.Application;
 import acme.entities.customisationParameters.CustomisationParameter;
 import acme.entities.demand.Demand;
 import acme.entities.forum.Forum;
+import acme.entities.forumUser.ForumUser;
 import acme.entities.investmentRound.InvestmentRound;
+import acme.entities.message.Message;
 import acme.entities.roles.Entrepreneur;
 import acme.framework.entities.Authenticated;
 import acme.framework.repositories.AbstractRepository;
@@ -67,5 +69,11 @@ public interface EntrepreneurInvestmentRoundRepository extends AbstractRepositor
 
 	@Query("select d from Demand d where d.investmentRound.id = ?1")
 	Demand findDemandByInvestmentRoundId(int id);
+
+	@Query("select a from Message a where a.forum.id = ?1")
+	Collection<Message> findMessagesByForumId(int id);
+
+	@Query("select a from ForumUser a where a.forum.id = ?1")
+	Collection<ForumUser> findForumUsersByForumId(int id);
 
 }

@@ -11,9 +11,13 @@ import acme.entities.activity.Activity;
 import acme.entities.application.Application;
 import acme.entities.demand.Demand;
 import acme.entities.forum.Forum;
+import acme.entities.forumUser.ForumUser;
 import acme.entities.investmentRound.InvestmentRound;
+import acme.entities.message.Message;
 import acme.entities.roles.Entrepreneur;
 import acme.features.authenticated.forum.AuthenticatedForumRepository;
+import acme.features.authenticated.forumUser.AuthenticatedForumUserRepository;
+import acme.features.authenticated.message.AuthenticatedMessageRepository;
 import acme.features.entrepreneur.accountingRecord.EntrepreneurAccountingRecordRepository;
 import acme.features.entrepreneur.activity.EntrepreneurActivityRepository;
 import acme.features.entrepreneur.application.EntrepreneurApplicationRepository;
@@ -41,6 +45,12 @@ public class EntrepreneurInvestmentRoundDeleteService implements AbstractDeleteS
 
 	@Autowired
 	AuthenticatedForumRepository			forumRepository;
+
+	@Autowired
+	AuthenticatedForumUserRepository		forumUserRepository;
+
+	@Autowired
+	AuthenticatedMessageRepository			messageRepository;
 
 	@Autowired
 	EntrepreneurDemandRepository			demandRepository;
@@ -116,6 +126,12 @@ public class EntrepreneurInvestmentRoundDeleteService implements AbstractDeleteS
 		Collection<Activity> acitvities = this.repository.activitiesByInvestmentRoundId(entity.getId());
 		this.activityRepository.deleteAll(acitvities);
 		Collection<Forum> forums = this.repository.forumsByInvestmentRoundId(entity.getId());
+		for (Forum forum : forums) {
+			Collection<Message> msgs = this.repository.findMessagesByForumId(forum.getId());
+			this.messageRepository.deleteAll(msgs);
+			Collection<ForumUser> forumUser = this.repository.findForumUsersByForumId(forum.getId());
+			this.forumUserRepository.deleteAll(forumUser);
+		}
 		this.forumRepository.deleteAll(forums);
 		Collection<Application> applications = this.repository.applicationsByInvestmentRoundId(entity.getId());
 		this.applicationRepository.deleteAll(applications);
