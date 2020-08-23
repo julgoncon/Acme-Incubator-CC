@@ -1,0 +1,16 @@
+administrator.notice.form.label.picture= Picture:
+administrator.notice.form.label.title= Title:
+administrator.notice.form.label.creation= Creation date:
+administrator.notice.form.label.deadline=Deadline date:
+administrator.notice.form.label.body= Body:
+administrator.notice.form.label.links= Links:
+administrator.notice.button.return = Return
+administrator.notice.button.create = Create
+administrator.notice.form.label.accept= Confirm the creation of this notice (cannot update or delete later)
+
+administrator.notice.list.label.title= Title
+administrator.notice.list.label.body= Body
+administrator.notice.list.label.links= Links
+
+administrator.notice.error.must-accept= Must accept before creating
+administrator.notice.error.deadline= Deadline date must be in the future

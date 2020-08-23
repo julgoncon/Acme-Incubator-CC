@@ -1,0 +1,23 @@
+# i18n_es.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+patron.creditCard.label.holderName = Titular:
+patron.creditCard.label.brandName = Marca:
+patron.creditCard.label.number = Número:
+patron.creditCard.label.expirationMonth = Mes de expiración:
+patron.creditCard.label.expirationYear = Año de expiración:
+patron.creditCard.label.cvv = CVV:
+
+patron.creditCard.button.create = Crear
+patron.creditCard.button.update = Actualizar
+patron.creditCard.button.return = Volver
+
+patron.creditCard.create.errors.expirationYear = Año no válido
+patron.creditCard.create.errors.expirationMonth = Mes no válido

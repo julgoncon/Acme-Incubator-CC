@@ -1,0 +1,12 @@
+authenticated.forum.list.label.title=Title
+authenticated.forum.list.label.investment.title=Forum's investment round title
+
+authenticated.forum.form.label.title=Title:
+
+authenticated.forum.button.messages= Messages list
+authenticated.forum.button.forumUser.list=Participants list
+authenticated.forum.button.forumUser.add=Add participant
+authenticated.forum.button.create.messages= Create message
+authenticated.forum.button.create= Create
+authenticated.forum.button.delete= Delete
+authenticated.forum.button.return= Return

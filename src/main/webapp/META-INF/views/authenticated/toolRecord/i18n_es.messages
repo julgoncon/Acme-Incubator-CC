@@ -1,0 +1,15 @@
+authenticated.toolRecord.form.label.title= Título:
+authenticated.toolRecord.form.label.activitySector= Sector de actividad:
+authenticated.toolRecord.form.label.inventorName= Nombre de inventor:
+authenticated.toolRecord.form.label.description= Descripción:
+authenticated.toolRecord.form.label.website= Sitio web:
+authenticated.toolRecord.form.label.email= Email:
+authenticated.toolRecord.form.label.stars= Estrellas:
+authenticated.toolRecord.form.label.openSource=Código libre
+
+authenticated.toolRecord.list.label.title= Título
+authenticated.toolRecord.list.label.activitySector= Sector de actividad
+authenticated.toolRecord.list.label.inventorName= Nombre de inventor
+authenticated.toolRecord.list.label.stars= Estrellas
+
+authenticated.toolRecord.button.return= Volver

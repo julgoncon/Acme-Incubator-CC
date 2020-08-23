@@ -1,0 +1,40 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+administrator.dashboard.form.title.numberTechnologyRecordBySector = Number of Technology record by sector
+administrator.dashboard.form.title.numberToolRecordBySector= Number of Tool record by sector
+administrator.dashboard.form.title.TechnologyRecordByOpenAndCloseSource = Ratio of Technology records by Open and Close Source
+administrator.dashboard.form.title.ToolRecordByOpenAndCloseSource = Ratio of Tool records by Open and Close Source
+
+administrator.dashboard.list.total = Total number of:
+administrator.dashboard.list.label.totalNotice = Notices
+administrator.dashboard.list.label.totalTechnologyRecord = Technology records
+administrator.dashboard.list.label.totalToolRecord = Tool records
+
+administrator.dashboard.label.average = Average number of:
+administrator.dashboard.list.label.MoneyOfActiveInquiry=Money of active inquiry
+administrator.dashboard.list.label.MoneyOfActiveOverture=Money of active overture
+administrator.dashboard.list.label.investmentRoundPerEntrepreneur= Investment round per entrepreneur
+administrator.dashboard.list.label.applicationsPerEntrepreneur= Applications per entrepreneur
+administrator.dashboard.list.label.applicationsPerInvestor=Applications per investor
+
+administrator.dashboard.form.title.ApplicationStatus=Ratio of applications by status
+administrator.dashboard.form.title.investmentRoundKind= Ratio of investment round by kind of round
+
+administrator.dashboard.label.minimum = Minimum number of:
+administrator.dashboard.label.maximum = Maximum number of:
+administrator.dashboard.label.stddev = Standard deviation number of:
+
+administrator.dashboard.form.title.timeSeriesPending= Time series of pending applications during last 15 days
+administrator.dashboard.form.title.timeSeriesRejected= Time series of rejected applications during last 15 days
+administrator.dashboard.form.title.timeSeriesAccepted= Time series of accepted applications during last 15 days
+
+
+

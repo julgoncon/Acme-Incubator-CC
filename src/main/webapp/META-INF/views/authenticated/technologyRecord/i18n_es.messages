@@ -1,0 +1,15 @@
+authenticated.technologyRecord.form.label.title= Título:
+authenticated.technologyRecord.form.label.activitySector= Sector de actividad:
+authenticated.technologyRecord.form.label.inventorName= Nombre de inventor:
+authenticated.technologyRecord.form.label.description= Descripción:
+authenticated.technologyRecord.form.label.website= Sitio web:
+authenticated.technologyRecord.form.label.email= Email:
+authenticated.technologyRecord.form.label.stars= Estrellas:
+authenticated.technologyRecord.form.label.openSource=Código libre
+
+authenticated.technologyRecord.list.label.title= Título
+authenticated.technologyRecord.list.label.activitySector= Sector de actividad
+authenticated.technologyRecord.list.label.inventorName= Nombre de inventor
+authenticated.technologyRecord.list.label.stars= Estrellas
+
+authenticated.technologyRecord.button.return= Volver

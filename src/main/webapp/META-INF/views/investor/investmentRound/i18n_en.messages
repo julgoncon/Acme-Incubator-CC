@@ -1,0 +1,23 @@
+investor.investmentRound.form.label.ticker=Ticker:
+investor.investmentRound.form.label.creation=Creation date:
+investor.investmentRound.form.label.kindRound=Kind round:
+investor.investmentRound.form.label.title=Title:
+investor.investmentRound.form.label.finalMode= Final mode
+investor.investmentRound.form.label.description= Description:
+investor.investmentRound.form.label.amountMoney=Amount of money:
+investor.investmentRound.form.label.link=Link:
+investor.investmentRound.form.label.startupName=Start-up name:
+
+investor.investmentRound.list.label.ticker=Ticker
+investor.investmentRound.list.label.creation=Creation date
+investor.investmentRound.list.label.kindRound=Kind round
+investor.investmentRound.list.label.title=Title
+investor.investmentRound.list.label.amountMoney=Amount of money
+
+
+investor.investmentRound.button.create.application= Create application
+
+investor.investmentRound.error.amountMoney=The amount of money must be € or EUR
+investor.investmentRound.error.differentAmount=The total money from the activities must be equal to the amount of money of the investment round
+
+investor.investmentRound.button.return= Return

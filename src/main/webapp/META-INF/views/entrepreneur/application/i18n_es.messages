@@ -1,0 +1,20 @@
+entrepreneur.application.form.label.ticker=Ticker:
+entrepreneur.application.form.label.creation=Fecha de creación:
+entrepreneur.application.form.label.status=Estado:
+entrepreneur.application.form.label.statement=Declaración:
+entrepreneur.application.form.label.investmentOffer= Oferta de inversión:
+entrepreneur.application.form.label.justification=Justificación:
+entrepreneur.application.form.label.status.accepted=Aceptada
+entrepreneur.application.form.label.status.pending=Pendiente
+entrepreneur.application.form.label.status.rejected=Rechazada
+entrepreneur.application.form.label.investmentRound=Título de la ronda de inversión:
+
+entrepreneur.application.list.label.ticker=Ticker
+entrepreneur.application.list.label.creation=Fecha de creación
+entrepreneur.application.list.label.status=Estado
+entrepreneur.application.list.label.investmentRound=Título de la ronda de inversión
+entrepreneur.application.list.label.investmentOffer= Oferta de inversión
+
+entrepreneur.application.button.return= Volver
+entrepreneur.application.button.update= Actualizar
+entrepreneur.request.error.must-justificated=Debes justificar las aplicaciones rechazadas

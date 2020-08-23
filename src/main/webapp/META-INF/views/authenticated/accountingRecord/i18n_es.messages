@@ -1,0 +1,9 @@
+authenticated.accountingRecord.form.label.draft=Borrador
+authenticated.accountingRecord.form.label.creation=Fecha de creación:
+authenticated.accountingRecord.form.label.body=Cuerpo:
+authenticated.accountingRecord.form.label.title=Título:
+
+authenticated.accountingRecord.list.label.title=Título
+authenticated.accountingRecord.list.label.creation=Fecha de creación
+
+authenticated.accountingRecord.button.return= Volver

@@ -1,0 +1,17 @@
+entrepreneur.activity.form.label.budget=Presupuesto:
+entrepreneur.activity.form.label.startMoment=Momento de inicio:
+entrepreneur.activity.form.label.endMoment=Momento de finalización:
+entrepreneur.activity.form.label.title=Título:
+
+entrepreneur.activity.list.label.title=Título
+entrepreneur.activity.list.label.budget=Presupuesto
+
+entrepreneur.activity.error.budget=Presupuesto debe ser € o EUR
+entrepreneur.activity.error.budgetOver0=Presupuesto debe ser mayor que 0.0
+entrepreneur.activity.error.startMoment= Momento de inicio debe ser anterior al momento de finalización
+entrepreneur.activity.error.startMomentFuture= El momento de comienzo y finalización deben ser futuros
+entrepreneur.activity.button.create=Crear
+entrepreneur.activity.button.update=Actualizar
+entrepreneur.activity.button.delete=Borrar
+
+entrepreneur.activity.button.return= Volver

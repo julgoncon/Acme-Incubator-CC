@@ -1,0 +1,18 @@
+authenticated.message.form.label.title= Título:
+authenticated.message.form.label.creation= Fecha de Creación:
+authenticated.message.form.label.tags= Etiquetas:
+authenticated.message.form.label.body= Cuerpo:
+authenticated.message.form.label.username= Nombre de usuario:
+
+authenticated.message.list.label.title= Título
+authenticated.message.list.label.creation= Fecha de Creación
+authenticated.message.list.label.username= Nombre de usuario
+
+authenticated.message.button.create = Crear
+authenticated.message.button.forum= Foro
+
+authenticated.message.button.confirm=Confirmo la creación de este mensaje (no podra ser editado ni borrado más tarde)
+authenticated.message.button.return = Volver
+authenticated.message.error.creation =La fecha de creación debe ser pasada
+authenticated.message.error.confirm = Debe confirmar la creación del mensaje
+authenticated.message.form.error.spam = Spam detectado

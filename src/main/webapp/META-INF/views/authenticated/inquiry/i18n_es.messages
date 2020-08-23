@@ -1,0 +1,14 @@
+authenticated.inquiry.form.label.title=Título:
+authenticated.inquiry.form.label.creation=Fecha de creación:
+authenticated.inquiry.form.label.deadline=Fecha límite:
+authenticated.inquiry.form.label.paragraphs=Párrafos:
+authenticated.inquiry.form.label.minMoney= Dinero mínimo:
+authenticated.inquiry.form.label.maxMoney= Dinero máximo:
+authenticated.inquiry.form.label.email=Email:
+
+authenticated.inquiry.list.label.title=Título
+authenticated.inquiry.list.label.creation=Fecha de creación
+authenticated.inquiry.list.label.minMoney= Dinero mínimo
+authenticated.inquiry.list.label.maxMoney= Dinero máximo
+
+authenticated.inquiry.button.return= Volver

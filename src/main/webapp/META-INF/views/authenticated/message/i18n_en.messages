@@ -1,0 +1,18 @@
+authenticated.message.form.label.title= Title:
+authenticated.message.form.label.creation= Creation date:
+authenticated.message.form.label.tags= Tags:
+authenticated.message.form.label.body= Body:
+authenticated.message.form.label.username= Username:
+
+authenticated.message.list.label.title= Title
+authenticated.message.list.label.creation= Creation date
+authenticated.message.list.label.username= Username
+
+
+authenticated.message.button.create = Create
+authenticated.message.button.forum= Forum
+authenticated.message.button.return = Return
+authenticated.message.button.confirm=I confirm posting this message (cannot be update nor deleted later)
+authenticated.message.error.creation = Date must be in the past
+authenticated.message.error.confirm = You must confirm the message
+authenticated.message.form.error.spam = Spam detected

@@ -1,0 +1,26 @@
+
+administrator.banner.form.label.picture = Picture:
+administrator.banner.form.label.slogan = Slogan:
+administrator.banner.form.label.targetUrl = Target URL:
+administrator.banner.form.label.holderName = Holder Name:
+administrator.banner.form.label.brandName = Brand Name:
+administrator.banner.form.label.number = Credit Card number:
+administrator.banner.form.label.expirationMonth = Credit Card Expiration Month:
+administrator.banner.form.label.expirationYear = Credit Card Expiration Year:
+administrator.banner.form.label.cvv = CVV:
+administrator.banner.form.label.patron = Patron organisation name:
+administrator.banner.form.label.creditCard=Credit card
+
+administrator.banner.list.label.picture = Picture
+administrator.banner.list.label.targetUrl = Target URL
+administrator.banner.list.label.patron = Patron organisation name
+
+
+administrator.banner.error.number = Invalid credit card number
+administrator.banner.error.expiration = Expired Credit Card
+administrator.banner.error.optionalCreditCard=All fields of the credit card must be filled or none of them
+
+administrator.banner.button.return = Return
+administrator.banner.button.update = Update
+administrator.banner.button.create = Create
+administrator.banner.button.delete = Delete

@@ -1,0 +1,11 @@
+entrepreneur.accountingRecord.form.label.draft=Draft
+entrepreneur.accountingRecord.form.label.creation=Creation date:
+entrepreneur.accountingRecord.form.label.body=Body:
+entrepreneur.accountingRecord.form.label.title=Title:
+
+entrepreneur.accountingRecord.list.label.title=Title
+entrepreneur.accountingRecord.list.label.creation=Creation date
+
+
+
+entrepreneur.accountingRecord.button.return= Return

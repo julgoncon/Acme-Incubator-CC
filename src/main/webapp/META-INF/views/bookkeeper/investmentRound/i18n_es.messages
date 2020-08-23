@@ -1,0 +1,20 @@
+bookkeeper.investmentRound.form.label.ticker=ticker:
+bookkeeper.investmentRound.form.label.creation=Fecha de creación:
+bookkeeper.investmentRound.form.label.kindRound=Tipo de ronda:
+bookkeeper.investmentRound.form.label.title=Título:
+bookkeeper.investmentRound.form.label.finalMode= Modo final
+bookkeeper.investmentRound.form.label.description= Descripción:
+bookkeeper.investmentRound.form.label.amountMoney=Cantidad de dinero:
+bookkeeper.investmentRound.form.label.link=Enlace:
+bookkeeper.investmentRound.form.label.startupName=Nombre de start-up:
+
+bookkeeper.investmentRound.list.label.ticker=ticker
+bookkeeper.investmentRound.list.label.creation=Fecha de creación
+bookkeeper.investmentRound.list.label.kindRound=Tipo de ronda
+bookkeeper.investmentRound.list.label.title=Título
+bookkeeper.investmentRound.list.label.amountMoney=Cantidad de dinero
+
+bookkeeper.investmentRound.button.accountingRecord=Lista de registros de contabilidad
+bookkeeper.investmentRound.button.accountingRecordCreate=Crear registro de contabilidad
+
+bookkeeper.inquiry.button.return= Volver

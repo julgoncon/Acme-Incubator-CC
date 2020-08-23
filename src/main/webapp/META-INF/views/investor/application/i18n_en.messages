@@ -1,0 +1,20 @@
+investor.application.form.label.ticker=Ticker:
+investor.application.form.label.creation=Creation date:
+investor.application.form.label.status=Status:
+investor.application.form.label.statement=Statement:
+investor.application.form.label.investmentOffer= Investment offer:
+
+investor.application.list.label.ticker=Ticker
+investor.application.list.label.status=Status
+investor.application.list.label.investmentOffer= Investment offer
+
+investor.application.form.label.tickerExplanation=* SSS denotes the first three letters of the corresponding activity sector(capital letters and include X if necessary),YY last two digits of creation year, NNNNNN is a six digits number.
+investor.application.error.isValidFormat=Format must be SSS-YY-NNNNNN
+investor.application.error.isValidYear=YY Must be last two digits of creation year
+investor.application.error.isValidNumber=NNNNNN must be 6 digits
+investor.application.error.isValidAS=SSS must be 3 first letters of your activity sector or SXX or SSX
+investor.application.error.tickerUnique=Ticker must be unique
+investor.application.error.investmentOffer=The investment offer must be € or EUR
+
+investor.application.button.create= Create
+investor.application.button.return= Return

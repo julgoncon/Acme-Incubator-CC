@@ -1,0 +1,21 @@
+# i18n_es.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+authenticated.entrepreneur.form.title.create = Convertirse en empresario
+authenticated.entrepreneur.form.title.update = Actualizar datos de empresario
+
+authenticated.entrepreneur.form.label.startupName = Nombre de start-up:
+authenticated.entrepreneur.form.label.activitySector = Sector de actividad:
+authenticated.entrepreneur.form.label.skillsRecord = registro de habilidades:
+authenticated.entrepreneur.form.label.qualificationRecord = registro de cualificación:
+
+authenticated.entrepreneur.form.button.create = Registrar
+authenticated.entrepreneur.form.button.update = Actualizar
+authenticated.entrepreneur.form.button.return = Volver

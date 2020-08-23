@@ -1,0 +1,15 @@
+anonymous.toolRecord.form.label.title= Título:
+anonymous.toolRecord.form.label.activitySector= Sector de actividad:
+anonymous.toolRecord.form.label.inventorName= Nombre de inventor:
+anonymous.toolRecord.form.label.description= Descripción:
+anonymous.toolRecord.form.label.website= Sitio web:
+anonymous.toolRecord.form.label.email= Email:
+anonymous.toolRecord.form.label.stars= Estrellas:
+anonymous.toolRecord.form.label.openSource=Código libre
+
+anonymous.toolRecord.list.label.title= Título
+anonymous.toolRecord.list.label.activitySector= Sector de actividad
+anonymous.toolRecord.list.label.inventorName= Nombre de inventor
+anonymous.toolRecord.list.label.stars= Estrellas
+
+anonymous.toolRecord.button.return= Volver

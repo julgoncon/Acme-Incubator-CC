@@ -1,0 +1,13 @@
+bookkeeper.accountingRecord.form.label.draft=Borrador
+bookkeeper.accountingRecord.form.label.creation=Fecha de creación:
+bookkeeper.accountingRecord.form.label.body=Cuerpo:
+bookkeeper.accountingRecord.form.label.title=Título:
+
+bookkeeper.accountingRecord.list.label.title=Título
+bookkeeper.accountingRecord.list.label.creation=Fecha de creación
+
+
+bookkeeper.accountingRecord.button.update= Actualizar
+
+bookkeeper.accountingRecord.button.create= Crear
+bookkeeper.accountingRecord.button.return= Volver

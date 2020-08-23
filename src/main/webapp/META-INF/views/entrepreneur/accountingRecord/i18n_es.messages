@@ -1,0 +1,10 @@
+entrepreneur.accountingRecord.form.label.draft=Borrador
+entrepreneur.accountingRecord.form.label.creation=Fecha de creación:
+entrepreneur.accountingRecord.form.label.body=Cuerpo:
+entrepreneur.accountingRecord.form.label.title=Título:
+
+entrepreneur.accountingRecord.list.label.title=Título
+entrepreneur.accountingRecord.list.label.creation=Fecha de creación
+
+
+entrepreneur.accountingRecord.button.return= Volver

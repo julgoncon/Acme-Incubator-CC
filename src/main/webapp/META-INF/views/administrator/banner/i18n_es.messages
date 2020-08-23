@@ -1,0 +1,26 @@
+administrator.banner.form.label.picture = Foto:
+administrator.banner.form.label.slogan = Eslogan:
+administrator.banner.form.label.targetUrl = URL Destino:
+administrator.banner.form.label.holderName = Nombre del titular:
+administrator.banner.form.label.brandName = Nombre de Marca:
+administrator.banner.form.label.number = Número de Tarjeta de Crédito:
+administrator.banner.form.label.expirationMonth = Mes de Expiración de Tarjeta de Crédito:
+administrator.banner.form.label.expirationYear = Año de Expiración de Tarjeta de Crédito:
+administrator.banner.form.label.cvv = CVV:
+administrator.banner.form.label.patron = Nombre de organización del patrocinador:
+administrator.banner.form.label.creditCard=Tarjeta de crédito
+
+administrator.banner.list.label.picture = Foto
+administrator.banner.list.label.targetUrl = URL Destino
+administrator.banner.list.label.patron = Nombre de organización del patrocinador
+
+
+
+administrator.banner.error.number = Numero de tarjeta de credito invalida
+administrator.banner.error.expiration = Tarjeta de Credito Expirada
+administrator.banner.error.optionalCreditCard=Todos los campos de la tarjeta de credito deben ser rellenados, o ninguno de ellos
+
+administrator.banner.button.return = Volver
+administrator.banner.button.update = Actualizar
+administrator.banner.button.create = Crear
+administrator.banner.button.delete = Borrar

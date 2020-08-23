@@ -1,0 +1,13 @@
+authenticated.forum.list.label.investment.title=Título de la ronda de inversión del foro
+authenticated.forum.list.label.title=Título
+
+authenticated.forum.form.label.title=Título:
+
+authenticated.forum.button.messages= Lista de mensajes
+authenticated.forum.button.forumUser.list=Lista de participantes
+authenticated.forum.button.forumUser.add=Añadir participante
+authenticated.forum.button.create.messages= Crear mensaje
+
+authenticated.forum.button.create= Crear
+authenticated.forum.button.delete= Borrar
+authenticated.forum.button.return= Volver

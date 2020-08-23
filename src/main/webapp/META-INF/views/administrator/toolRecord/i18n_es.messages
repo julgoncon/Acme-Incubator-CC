@@ -1,0 +1,20 @@
+administrator.toolRecord.form.label.title= Título:
+administrator.toolRecord.form.label.activitySector= Sector de actividad:
+administrator.toolRecord.form.label.inventorName= Nombre de inventor:
+administrator.toolRecord.form.label.description= Descripción:
+administrator.toolRecord.form.label.website= Sitio web:
+administrator.toolRecord.form.label.email= Email:
+administrator.toolRecord.form.label.stars= Estrellas:
+administrator.toolRecord.form.label.openSource=Código libre
+
+administrator.toolRecord.list.label.title= Título
+administrator.toolRecord.list.label.activitySector= Sector de actividad
+administrator.toolRecord.list.label.inventorName= Nombre de inventor
+administrator.toolRecord.list.label.stars= Estrellas
+
+administrator.toolRecord.button.return= Volver
+administrator.tool-record.form.button.update =Actualizar
+administrator.tool-record.form.button.create= Crear
+administrator.tool-record.form.button.delete= Borrar
+
+administrator.toolRecord.error.activitySector= Sector de actividad inválido

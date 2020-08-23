@@ -1,0 +1,23 @@
+investor.investmentRound.form.label.ticker=Ticker:
+investor.investmentRound.form.label.creation=Fecha de creación:
+investor.investmentRound.form.label.kindRound=Tipo de ronda:
+investor.investmentRound.form.label.title=Título:
+investor.investmentRound.form.label.finalMode= Modo final
+investor.investmentRound.form.label.description= Descripción:
+investor.investmentRound.form.label.amountMoney=Cantidad de dinero:
+investor.investmentRound.form.label.link=Enlace:
+investor.investmentRound.form.label.startupName=Nombre de start-up:
+
+
+investor.investmentRound.list.label.ticker=Ticker
+investor.investmentRound.list.label.creation=Fecha de creación
+investor.investmentRound.list.label.kindRound=Tipo de ronda
+investor.investmentRound.list.label.title=Título
+investor.investmentRound.list.label.amountMoney=Cantidad de dinero
+
+investor.investmentRound.button.create.application= Crear aplicacion
+
+investor.investmentRound.error.amountMoney=La cantidad de dinero debe ser € o EUR
+investor.investmentRound.error.differentAmount=La suma de dinero de las actividades debe ser la misma que la cantidad de dinero de la ronda de inversión
+
+investor.investmentRound.button.return= Volver

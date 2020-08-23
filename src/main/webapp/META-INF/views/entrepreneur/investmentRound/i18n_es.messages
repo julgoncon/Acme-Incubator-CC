@@ -1,0 +1,39 @@
+entrepreneur.investmentRound.form.label.ticker=Ticker:
+entrepreneur.investmentRound.form.label.creation=Fecha de creación:
+entrepreneur.investmentRound.form.label.kindRound=Tipo de ronda:
+entrepreneur.investmentRound.form.label.title=Título:
+entrepreneur.investmentRound.form.label.finalMode= Modo final
+entrepreneur.investmentRound.form.label.description= Descripción:
+entrepreneur.investmentRound.form.label.amountMoney=Cantidad de dinero:
+entrepreneur.investmentRound.form.label.link=Enlace:
+entrepreneur.investmentRound.form.label.startupName=Nombre de start-up:
+
+entrepreneur.investmentRound.list.label.ticker=Ticker
+entrepreneur.investmentRound.list.label.creation=Fecha de creación
+entrepreneur.investmentRound.list.label.kindRound=Tipo de ronda
+entrepreneur.investmentRound.list.label.title=Título
+entrepreneur.investmentRound.list.label.amountMoney=Cantidad de dinero
+
+entrepreneur.investmentRound.button.accountingRecord=Lista de registros de contabilidad
+entrepreneur.investmentRound.form.label.tickerExplanation=* SSS denota las tres primeras letras en mayúsculas del sector de actividad (incluye X si fuera necesario) ,YY los últimos dos dígitos del año de creación, NNNNNN es un número de seis dígitos.
+entrepreneur.investmentRound.error.isValidFormat=El formato debe ser SSS-YY-NNNNNN
+entrepreneur.investmentRound.error.isValidYear=YY deben ser los dos últimos dígitos del año de creación
+entrepreneur.investmentRound.error.isValidNumber=NNNNNN debe ser 6 dígitos
+entrepreneur.investmentRound.error.isValidAS=SSS debe ser las 3 primeras letras de tu sector de actividad en mayúscula o SXX o SSX si el sector fuera más corto
+entrepreneur.investmentRound.error.tickerUnique=El ticker debe ser único
+entrepreneur.investmentRound.error.spam= Spam detectado
+
+entrepreneur.investmentRound.button.list.activities=Lista de actividades
+entrepreneur.investmentRound.button.create.activities= Crear actividad
+entrepreneur.investmentRound.error.amountMoney=La cantidad de dinero debe ser € o EUR
+entrepreneur.investmentRound.error.amountMoneyOver0=La cantidad de dinero debe ser mayor a 0.0
+
+entrepreneur.investmentRound.error.differentAmount=La suma de dinero de las actividades debe ser la misma que la cantidad de dinero de la ronda de inversión
+
+
+entrepreneur.investmentRound.button.create= Crear
+entrepreneur.investmentRound.button.update=Actualizar
+entrepreneur.investmentRound.button.delete=Borrar
+
+
+entrepreneur.inquiry.button.return= Volver

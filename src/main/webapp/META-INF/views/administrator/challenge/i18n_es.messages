@@ -1,0 +1,46 @@
+# i18n_es.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+administrator.challenge.list.label.title= Título
+administrator.challenge.list.label.description= Descripción
+administrator.challenge.list.label.rookieLevelReward= Recompensa nivel novato
+administrator.challenge.list.label.averageLevelReward= Recompensa nivel promedio
+administrator.challenge.list.label.expertLevelReward= Recompensa nivel experto
+administrator.challenge.list.label.deadline= Fecha límite
+
+administrator.challenge.form.label.title= Título:
+administrator.challenge.form.label.creation= Fecha de creación:
+administrator.challenge.form.label.description= Descripción:
+administrator.challenge.form.label.rookieLevelGoal= Objetivo nivel novato:
+administrator.challenge.form.label.averageLevelGoal= Objetivo nivel promedio:
+administrator.challenge.form.label.expertLevelGoal= Objetivo nivel experto:
+administrator.challenge.form.label.rookieLevelReward= Recompensa nivel novato:
+administrator.challenge.form.label.averageLevelReward= Recompensa nivel promedio:
+administrator.challenge.form.label.expertLevelReward= Recompensa nivel experto:
+administrator.challenge.form.label.deadline= Fecha límite:
+administrator.challenge.form.button.return = Volver
+
+
+administrator.challenge.form.button.update= Actualizar
+administrator.challenge.form.button.delete= Borrar
+administrator.challenge.form.button.create= Crear
+
+administrator.challenge.error.deadline= La fecha limite debe estar al menos un mes en el futuro
+administrator.challenge.error.rookieLevelReward= La única moneda aceptada es el euro (€)
+administrator.challenge.error.expertLevelReward= La única moneda aceptada es el euro (€)
+administrator.challenge.error.averageLevelReward= La única moneda aceptada es el euro (€)
+
+administrator.challenge.error.rookieAmount= La recompensa novato deben ser menor que las experto y promedio
+administrator.challenge.error.averageAmount= La recompensa promedio deben ser menor que la experto y mayor que la novato
+administrator.challenge.error.expertAmount= La recompensa experto deben ser mayor que las promedio y novato
+
+
+
+

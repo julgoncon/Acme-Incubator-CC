@@ -1,0 +1,19 @@
+bookkeeper.investmentRound.form.label.ticker=ticker:
+bookkeeper.investmentRound.form.label.creation=Creation date:
+bookkeeper.investmentRound.form.label.kindRound=Kind round:
+bookkeeper.investmentRound.form.label.title=Title:
+bookkeeper.investmentRound.form.label.finalMode= Final mode
+bookkeeper.investmentRound.form.label.description= Description:
+bookkeeper.investmentRound.form.label.amountMoney=Amount of money:
+bookkeeper.investmentRound.form.label.link=Link:
+bookkeeper.investmentRound.form.label.startupName=Start-up name:
+
+bookkeeper.investmentRound.list.label.ticker=ticker
+bookkeeper.investmentRound.list.label.creation=Creation date
+bookkeeper.investmentRound.list.label.kindRound=Kind round
+bookkeeper.investmentRound.list.label.title=Title
+bookkeeper.investmentRound.list.label.amountMoney=Amount of money
+
+bookkeeper.investmentRound.button.accountingRecord=Accounting records list
+bookkeeper.investmentRound.button.accountingRecordCreate=Create accounting record
+bookkeeper.investmentRound.button.return= Return

@@ -1,0 +1,16 @@
+administrator.notice.form.label.picture= Imagen:
+administrator.notice.form.label.title= Título:
+administrator.notice.form.label.creation= Fecha de Creación:
+administrator.notice.form.label.deadline= Fecha límite:
+administrator.notice.form.label.body= Cuerpo:
+administrator.notice.form.label.links= Enlaces:
+administrator.notice.button.return = Volver
+administrator.notice.button.create = Crear
+administrator.notice.form.label.accept= Confirmo la creación de esta noticia (no podrá ser editada ni borrada más tarde)
+
+administrator.notice.list.label.title= Título
+administrator.notice.list.label.body= Cuerpo
+administrator.notice.list.label.links= Enlaces
+
+administrator.notice.error.must-accept= Debe aceptar antes de la creación
+administrator.notice.error.deadline=Fecha límite debe ser futura

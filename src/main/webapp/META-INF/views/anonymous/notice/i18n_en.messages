@@ -1,0 +1,12 @@
+anonymous.notice.list.label.links= Link
+anonymous.notice.list.label.creation= Creation date
+anonymous.notice.list.label.body= Body
+
+
+anonymous.notice.form.label.picture= Picture:
+anonymous.notice.form.label.title= Title:
+anonymous.notice.form.label.creation= Creation date:
+anonymous.notice.form.label.deadline= Deadline date:
+anonymous.notice.form.label.body= Body:
+anonymous.notice.form.label.links= Links:
+anonymous.notice.form.button.return = Return

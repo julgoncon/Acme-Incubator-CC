@@ -1,0 +1,11 @@
+authenticated.accountingRecord.form.label.draft=Draft
+authenticated.accountingRecord.form.label.creation=Creation date:
+authenticated.accountingRecord.form.label.body=Body:
+authenticated.accountingRecord.form.label.title=Title:
+
+authenticated.accountingRecord.list.label.title=Title
+authenticated.accountingRecord.list.label.creation=Creation date
+
+
+
+authenticated.accountingRecord.button.return= Return

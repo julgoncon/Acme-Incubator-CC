@@ -1,0 +1,22 @@
+administrator.inquiry.form.label.title=Título:
+administrator.inquiry.form.label.creation=Fecha de creación:
+administrator.inquiry.form.label.deadline=Fecha límite:
+administrator.inquiry.form.label.paragraphs=Párrafos:
+administrator.inquiry.form.label.minMoney= Dinero mínimo:
+administrator.inquiry.form.label.maxMoney= Dinero máximo:
+administrator.inquiry.form.label.email=Email:
+
+administrator.inquiry.list.label.title=Título
+administrator.inquiry.list.label.creation=Fecha de creación
+administrator.inquiry.list.label.minMoney= Dinero mínimo
+administrator.inquiry.list.label.maxMoney= Dinero máximo
+
+administrator.inquiry.button.return= Volver
+administrator.inquiry.form.button.create= Crear
+administrator.inquiry.form.button.update = Actualizar
+administrator.inquiry.form.button.delete =Borrar
+
+administrator.inquiry.error.maxMoney= La moneda debe ser euro
+administrator.inquiry.error.minMoney= La moneda debe ser euro
+administrator.inquiry.error.minSmaller= El valor máximo debe ser mayor que el mínimo
+administrator.inquiry.error.deadline= La fecha límite debe ser futura

@@ -1,0 +1,38 @@
+entrepreneur.investmentRound.form.label.ticker=Ticker:
+entrepreneur.investmentRound.form.label.creation=Creation date:
+entrepreneur.investmentRound.form.label.kindRound=Kind round:
+entrepreneur.investmentRound.form.label.title=Title:
+entrepreneur.investmentRound.form.label.finalMode= Final mode
+entrepreneur.investmentRound.form.label.description= Description:
+entrepreneur.investmentRound.form.label.amountMoney=Amount of money:
+entrepreneur.investmentRound.form.label.link=Link:
+entrepreneur.investmentRound.form.label.startupName=Start-up name:
+
+
+entrepreneur.investmentRound.list.label.ticker=Ticker
+entrepreneur.investmentRound.list.label.creation=Creation date
+entrepreneur.investmentRound.list.label.kindRound=Kind round
+entrepreneur.investmentRound.list.label.title=Title
+entrepreneur.investmentRound.list.label.amountMoney=Amount of money
+
+entrepreneur.investmentRound.button.accountingRecord=Accounting records list
+entrepreneur.investmentRound.form.label.tickerExplanation=* SSS denotes the first three letters of the corresponding activity sector(capital letters and include X if necessary),YY last two digits of creation year, NNNNNN is a six digits number.
+entrepreneur.investmentRound.error.isValidFormat=Format must be SSS-YY-NNNNNN
+entrepreneur.investmentRound.error.isValidYear=YY Must be last two digits of creation year
+entrepreneur.investmentRound.error.isValidNumber=NNNNNN must be 6 digits
+entrepreneur.investmentRound.error.isValidAS=SSS must be 3 first letters of your activity sector or SXX or SSX (in capital letters)
+entrepreneur.investmentRound.error.tickerUnique=Ticker must be unique
+entrepreneur.investmentRound.error.spam= Spam detected
+
+entrepreneur.investmentRound.button.list.activities= Activities list
+entrepreneur.investmentRound.button.create.activities= Create activity
+entrepreneur.investmentRound.error.amountMoney=The amount of money must be € or EUR
+entrepreneur.investmentRound.error.amountMoneyOver0=The amount of money must higher than 0.0
+
+entrepreneur.investmentRound.error.differentAmount=The total money from the activities must be equal to the amount of money of the investment round
+entrepreneur.investmentRound.button.create=Create
+entrepreneur.investmentRound.button.update=Update
+entrepreneur.investmentRound.button.delete=Delete
+
+
+entrepreneur.investmentRound.button.return= Return

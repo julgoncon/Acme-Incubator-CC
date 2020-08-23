@@ -1,0 +1,43 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+administrator.challenge.list.label.title= Title
+administrator.challenge.list.label.description= Description
+administrator.challenge.list.label.rookieLevelReward= Rookie level Reward
+administrator.challenge.list.label.averageLevelReward= Average level Reward
+administrator.challenge.list.label.expertLevelReward= Expert level Reward
+administrator.challenge.list.label.deadline= Deadline
+
+administrator.challenge.form.label.title= Title:
+administrator.challenge.form.label.creation= Creation date:
+administrator.challenge.form.label.description= Description:
+administrator.challenge.form.label.rookieLevelGoal= Rookie level goal:
+administrator.challenge.form.label.averageLevelGoal= Average level goal:
+administrator.challenge.form.label.expertLevelGoal= Expert level goal:
+administrator.challenge.form.label.rookieLevelReward= Rookie level reward:
+administrator.challenge.form.label.averageLevelReward= Average level reward:
+administrator.challenge.form.label.expertLevelReward= Expert level reward:
+administrator.challenge.form.label.deadline= Deadline:
+administrator.challenge.form.button.return = Return
+
+administrator.challenge.form.button.update= Update
+administrator.challenge.form.button.delete= Delete
+administrator.challenge.form.button.create= Create
+
+administrator.challenge.error.deadline= Deadline must be one month in the future
+administrator.challenge.error.rookieLevelReward= Currency must be EUR or €
+administrator.challenge.error.expertLevelReward= Currency must be EUR or €
+administrator.challenge.error.averageLevelReward= Currency must be EUR or €
+administrator.challenge.error.rookieAmount= Rookie Reward must be less than Average Reward and Expert Reward
+administrator.challenge.error.averageAmount= Average Reward must be less than Expert Reward and greater than Rookie Reward
+administrator.challenge.error.expertAmount= Expert Reward must be greater than Average Reward and Rookie Reward
+
+
+
