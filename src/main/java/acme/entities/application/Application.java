@@ -16,6 +16,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
 
+import org.hibernate.validator.constraints.URL;
+
 import acme.entities.investmentRound.InvestmentRound;
 import acme.entities.roles.Investor;
 import acme.framework.datatypes.Money;
@@ -54,6 +56,14 @@ public class Application extends DomainEntity {
 	private Money				investmentOffer;
 
 	private String				justification;
+
+	private String				offer;
+
+	@URL
+	private String				moreInfo;
+
+	@Pattern(regexp = "^((?=[^ ]{10,})(?=(.*\\p{L}.*){1,})(?=(.*\\p{N}.*){1,})((.*\\p{P}.*){1,}))?$", message = "{application.error.password}")
+	private String				password;
 
 	@Temporal(TemporalType.TIMESTAMP)
 	@Past

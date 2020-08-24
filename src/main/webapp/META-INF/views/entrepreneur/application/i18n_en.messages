@@ -8,6 +8,9 @@ entrepreneur.application.form.label.status.pending=Pending
 entrepreneur.application.form.label.status.rejected=Rejected
 entrepreneur.application.form.label.investmentRound=Investment round title:
 entrepreneur.application.form.label.investmentOffer= Investment offer:
+entrepreneur.application.form.label.offer= Offer:
+entrepreneur.application.form.label.moreInfo= More info:
+entrepreneur.application.form.label.password= Password:
 
 entrepreneur.application.list.label.ticker=ticker
 entrepreneur.application.list.label.creation=Creation date

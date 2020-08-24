@@ -3,10 +3,14 @@ investor.application.form.label.creation=Fecha de creación:
 investor.application.form.label.status=Estado:
 investor.application.form.label.statement=Declaración:
 investor.application.form.label.investmentOffer= Oferta de inversión:
+investor.application.form.label.offer=Oferta:
+investor.application.form.label.moreInfo=Más información:
+investor.application.form.label.password=Contraseña:
 
 investor.application.list.label.ticker=Ticker
 investor.application.list.label.status=Estado
 investor.application.list.label.investmentOffer= Oferta de inversión
+application.error.password=La contraseña debe tener un mínimo de XXX caracteres, al menos XXX letras, XXX dígitos y XXX signos de puntuación
 
 investor.application.form.label.tickerExplanation=* SSS denota las tres primeras letras en mayúsculas del sector de actividad (incluye X si fuera necesario) ,YY los últimos dos dígitos del año de creación, NNNNNN es un número de seis dígitos.
 investor.application.error.isValidFormat=El formato debe ser SSS-YY-NNNNNN
@@ -15,6 +19,8 @@ investor.application.error.isValidNumber=NNNNNN debe ser 6 dígitos
 investor.application.error.isValidAS=SSS debe ser las 3 primeras letras de tu sector de actividad en mayúscula o SXX o SSX si el sector fuera más corto
 investor.application.error.tickerUnique=El ticker debe ser único
 investor.application.error.investmentOffer=La oferta de inversión debe ser € o EUR
+investor.application.error.offer=Si introduce un enlace o una contraseña, entonces debe introducir una oferta
+investor.application.error.moreInfo=Si introduce una contraseña, debe introducir un enlace
 
 investor.application.button.create=Crear
 investor.application.button.return= Volver

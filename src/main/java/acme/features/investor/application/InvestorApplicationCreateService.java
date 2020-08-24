@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.application.Application;
+import acme.entities.demand.Demand;
 import acme.entities.investmentRound.InvestmentRound;
 import acme.entities.roles.Investor;
 import acme.framework.components.Errors;
@@ -55,8 +56,12 @@ public class InvestorApplicationCreateService implements AbstractCreateService<I
 		assert model != null;
 
 		int investmentId = request.getModel().getInteger("investmentId");
-		request.unbind(entity, model, "ticker", "investmentOffer", "statement");
+		Demand demand = this.repository.findDemandByInvestmentId(investmentId);
+		Boolean hasDemand = demand != null;
+		request.unbind(entity, model, "ticker", "investmentOffer", "statement", "offer", "moreInfo", "password");
 		model.setAttribute("investmentId", investmentId);
+		model.setAttribute("hasDemand", hasDemand);
+
 	}
 
 	@Override
@@ -137,6 +142,17 @@ public class InvestorApplicationCreateService implements AbstractCreateService<I
 			boolean assertCurrency1 = entity.getInvestmentOffer().getCurrency().contentEquals("€") || entity.getInvestmentOffer().getCurrency().contentEquals("EUR");
 			errors.state(request, assertCurrency1, "investmentOffer", "investor.application.error.investmentOffer");
 
+		}
+
+		if (!errors.hasErrors("offer") && !errors.hasErrors("moreInfo") && !errors.hasErrors("password")) {
+			Boolean assertAllMissing = entity.getOffer() == "" && entity.getMoreInfo() == "" && entity.getPassword() == "";
+			if (!assertAllMissing) {
+				Boolean offerMissing = entity.getOffer() == "";
+				errors.state(request, !offerMissing, "offer", "investor.application.error.offer");
+				Boolean passWithoutLink = entity.getMoreInfo() == "" && entity.getPassword() != "";
+				errors.state(request, !passWithoutLink, "moreInfo", "investor.application.error.moreInfo");
+
+			}
 		}
 	}
 

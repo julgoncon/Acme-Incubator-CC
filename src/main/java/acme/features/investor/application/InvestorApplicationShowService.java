@@ -16,6 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.application.Application;
+import acme.entities.demand.Demand;
 import acme.entities.roles.Investor;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
@@ -57,8 +58,11 @@ public class InvestorApplicationShowService implements AbstractShowService<Inves
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-
-		request.unbind(entity, model, "ticker", "creation", "status", "statement", "investmentOffer");
+		int investmentId = entity.getInvestmentRound().getId();
+		Demand demand = this.repository.findDemandByInvestmentId(investmentId);
+		Boolean hasDemand = demand != null;
+		request.unbind(entity, model, "ticker", "creation", "status", "statement", "investmentOffer", "offer", "moreInfo", "password");
+		model.setAttribute("hasDemand", hasDemand);
 	}
 
 	@Override

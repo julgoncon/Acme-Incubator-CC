@@ -6,6 +6,7 @@
 <acme:form>
 
 	<acme:form-hidden path="investmentId" />
+	<acme:form-hidden path="hasDemand" />
 	<jstl:if test="${command == 'create'}">
 		<acme:form-textbox code="investor.application.form.label.ticker" path="ticker"  placeholder="SSS-YY-NNNNNN"/>
 		<jstl:out value="${MessageHelper.getMessage('investor.application.form.label.tickerExplanation')}"/>
@@ -19,7 +20,11 @@
 		<acme:form-textarea code="investor.application.form.label.statement" path="statement"/>
 		<acme:form-money code="investor.application.form.label.investmentOffer" path="investmentOffer"/>
 	</jstl:if>
-		
+	<jstl:if test="${hasDemand == true}">
+		<acme:form-textarea code="investor.application.form.label.offer" path="offer"/>
+		<acme:form-textbox code="investor.application.form.label.moreInfo" path="moreInfo"/>
+		<acme:form-password code="investor.application.form.label.password" path="password"/>
+	</jstl:if>
 	
 
 	<acme:form-submit test="${command == 'create'}" code="investor.application.button.create"

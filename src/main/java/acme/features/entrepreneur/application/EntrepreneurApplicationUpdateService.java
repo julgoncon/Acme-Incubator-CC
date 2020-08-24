@@ -67,7 +67,7 @@ public class EntrepreneurApplicationUpdateService implements AbstractUpdateServi
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "status", "justification");
+		request.unbind(entity, model, "status", "justification", "offer", "moreInfo", "password");
 	}
 
 	@Override

@@ -30,7 +30,11 @@
 	<acme:form-textarea code="entrepreneur.application.form.label.statement" path="statement"  readonly="true"/>
 	<acme:form-money code="entrepreneur.application.form.label.investmentOffer" path="investmentOffer"  readonly="true"/>
 
-		<acme:form-submit test ="${command == 'update' || command == 'show' && status == 'pending'}" code="entrepreneur.application.button.update" action="/entrepreneur/application/update"/>
+	<acme:form-textarea code="entrepreneur.application.form.label.offer" path="offer" readonly="true"/>
+	<acme:form-textbox code="entrepreneur.application.form.label.moreInfo" path="moreInfo" readonly="true"/>
+	<acme:form-textbox code="entrepreneur.application.form.label.password" path="password" readonly="true"/>
+	
+	<acme:form-submit test ="${command == 'update' || command == 'show' && status == 'pending'}" code="entrepreneur.application.button.update" action="/entrepreneur/application/update"/>
 	
 	<acme:form-return code="entrepreneur.application.button.return"/>	
 </acme:form>
