@@ -504,6 +504,23 @@
 <br/>
 
 <h3 style="margin-bottom: 2rem;text-align: center;">
+	<acme:message code="administrator.dashboard.list.ratio"/>
+</h3>
+
+<table class="table table-striped table-condensed table-hover nowrap w-100">
+    <tr>
+        <th style="width: 33%"><acme:message code="administrator.dashboard.list.label.ratioInvestmentsRoundsWithDemand"/></th>
+        <th style="width: 33%"><acme:message code="administrator.dashboard.list.label.ratioApplicationsWithOffer"/></th>
+        <th style="width: 33%"><acme:message code="administrator.dashboard.list.label.rationApplicationsWithDemand"/></th>
+    </tr>
+    <tr>
+        <td>${ratioInvestmentsRoundsWithDemand}</td>
+        <td>${ratioApplicationsWithOffer}</td>
+        <td>${rationApplicationsWithDemand}</td>
+    </tr>
+</table>
+
+<h3 style="margin-bottom: 2rem;text-align: center;">
 	<acme:message code="administrator.dashboard.list.total"/>
 </h3>
 

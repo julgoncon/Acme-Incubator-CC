@@ -113,4 +113,16 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 	@Query("select a from Application a")
 	Collection<Application> getApplications();
 
+	@Query("select 1.0 * count(a) / (select count(b) from InvestmentRound b) from Demand a")
+	Double ratioInvestmentsRoundsWithDemand();
+
+	@Query("select 1.0 * count(a) / (select count(b) from Application b) from Application a where a.offer!=''")
+	Double ratioApplicationsWithOffer();
+
+	@Query("select count(a) from Application a")
+	Double findAllApplications();
+
+	@Query("select count(a) from Demand a")
+	Double findAllDemands();
+
 }

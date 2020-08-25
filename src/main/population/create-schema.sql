@@ -45,6 +45,9 @@
         `investment_offer_amount` double precision,
         `investment_offer_currency` varchar(255),
         `justification` varchar(255),
+        `more_info` varchar(255),
+        `offer` varchar(255),
+        `password` varchar(255),
         `statement` varchar(1024),
         `status` varchar(255),
         `ticker` varchar(255),
@@ -135,6 +138,14 @@
         `activity_sector` varchar(255),
         `spam_threshold` double precision,
         `spam_words` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `demand` (
+       `id` integer not null,
+        `version` integer not null,
+        `text` varchar(255),
+        `investment_round_id` integer not null,
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -324,6 +335,9 @@ create index IDX2q2747fhp099wkn3j2yt05fhs on `application` (`status`);
        add constraint UK_ao7wxw7e7mkj6g5q49yq2fw8d unique (`ticker`);
 create index IDXnr284tes3x8hnd3h716tmb3fr on `challenge` (`deadline`);
 
+    alter table `demand` 
+       add constraint UK_8yl8ifwg8wfu7fam660e5tb24 unique (`investment_round_id`);
+
     alter table `investment_round` 
        add constraint UK_408l1ohatdkkut5bkt0eu6ifs unique (`ticker`);
 
@@ -394,6 +408,11 @@ create index IDXnr284tes3x8hnd3h716tmb3fr on `challenge` (`deadline`);
        add constraint FK_6cyha9f1wpj0dpbxrrjddrqed 
        foreign key (`user_account_id`) 
        references `user_account` (`id`);
+
+    alter table `demand` 
+       add constraint `FKcdh515andy8qaywdfdetgaal1` 
+       foreign key (`investment_round_id`) 
+       references `investment_round` (`id`);
 
     alter table `entrepreneur` 
        add constraint FK_r6tqltqvrlh1cyy8rsj5pev1q 

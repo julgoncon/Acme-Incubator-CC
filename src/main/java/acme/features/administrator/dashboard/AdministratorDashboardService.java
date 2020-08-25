@@ -57,7 +57,8 @@ public class AdministratorDashboardService implements AbstractShowService<Admini
 			"getAverageMoneyOfActiveOverture", "getStandarddeviationMoneyOfActiveOverture", "getMinimumMoneyOfActiveInquiry", "getMaximumMoneyOfActiveInquiry", "getAverageMoneyOfActiveInquiry", "getStandarddeviationMoneyOfActiveInquiry",
 			"ratioOfOpenSourceTechnologyRecord", "ratioOfOpenSourceToolRecord", "ratioOfCloseSourceTechnologyRecord", "ratioOfCloseSourceToolRecord", "getAverageInvestmentRoundPerEntrepreneur", "getAverageApplicationsPerEntrepreneur",
 			"getAverageApplicationsPerInvestor", "ratioOfPendingApplications", "ratioOfAcceptedApplications", "ratioOfRejectedApplications", "ratioOfSeedInvestmentRound", "ratioOfAngelInvestmentRound", "ratioOfSeriesAInvestmentRound",
-			"ratioOfSeriesBInvestmentRound", "ratioOfSeriesCInvestmentRound", "ratioOfBridgeInvestmentRound", "timeSeriesPending", "timeSeriesAccepted", "timeSeriesRejected");
+			"ratioOfSeriesBInvestmentRound", "ratioOfSeriesCInvestmentRound", "ratioOfBridgeInvestmentRound", "timeSeriesPending", "timeSeriesAccepted", "timeSeriesRejected", "ratioInvestmentsRoundsWithDemand", "rationApplicationsWithDemand",
+			"ratioApplicationsWithOffer");
 	}
 
 	@Override
@@ -95,6 +96,13 @@ public class AdministratorDashboardService implements AbstractShowService<Admini
 		Double ratioOfSeriesBInvestmentRound = this.repository.ratioOfSeriesBInvestmentRound();
 		Double ratioOfSeriesCInvestmentRound = this.repository.ratioOfSeriesCInvestmentRound();
 		Double ratioOfBridgeInvestmentRound = this.repository.ratioOfBridgeInvestmentRound();
+		Double ratioInvestmentsRoundsWithDemand = this.repository.ratioInvestmentsRoundsWithDemand();
+		Double ratioApplicationsWithOffer = this.repository.ratioApplicationsWithOffer();
+		Double rationApplicationsWithDemand = this.repository.findAllDemands() / this.repository.findAllApplications();
+		result.setRatioInvestmentsRoundsWithDemand(ratioInvestmentsRoundsWithDemand);
+		result.setRatioApplicationsWithOffer(ratioApplicationsWithOffer);
+		result.setRationApplicationsWithDemand(rationApplicationsWithDemand);
+
 		result.setNumberTechnologyRecordBySector(array);
 		result.setNumberToolRecordBySector(array2);
 		result.setGetTotalNotice(TotalNotice);
@@ -151,8 +159,9 @@ public class AdministratorDashboardService implements AbstractShowService<Admini
 			if (date1 != null) {
 				Calendar dateAppUpdate = Calendar.getInstance();
 				dateAppUpdate.setTime(date1);
-				milisUpdate = (int) (today.getTimeInMillis() - dateAppUpdate.getTimeInMillis());
-				milisUpdate = milisUpdate / 86400000;
+				long fechaUpdate = dateAppUpdate.getTimeInMillis();
+				long diffUpdate = hoy - fechaUpdate;
+				milisUpdate = (int) (diffUpdate / 86400000);
 				if (milisUpdate >= 15) {
 					continue;
 				}

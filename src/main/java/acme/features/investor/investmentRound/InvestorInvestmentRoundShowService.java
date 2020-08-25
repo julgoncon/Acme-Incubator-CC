@@ -15,6 +15,7 @@ package acme.features.investor.investmentRound;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.entities.demand.Demand;
 import acme.entities.investmentRound.InvestmentRound;
 import acme.entities.roles.Investor;
 import acme.framework.components.Model;
@@ -53,7 +54,12 @@ public class InvestorInvestmentRoundShowService implements AbstractShowService<I
 		assert model != null;
 
 		int investmentId = request.getModel().getInteger("id");
+		Demand demand = this.repository.findDemandByInvestmentId(investmentId);
 		request.unbind(entity, model, "ticker", "creation", "kindRound", "title", "finalMode", "description", "amountMoney", "link", "entrepreneur.startupName");
+		if (demand != null) {
+			model.setAttribute("text", demand.getText());
+
+		}
 		model.setAttribute("investmentId", investmentId);
 
 	}

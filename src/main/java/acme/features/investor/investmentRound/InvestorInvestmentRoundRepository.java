@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 
 import acme.entities.activity.Activity;
 import acme.entities.customisationParameters.CustomisationParameter;
+import acme.entities.demand.Demand;
 import acme.entities.investmentRound.InvestmentRound;
 import acme.entities.roles.Entrepreneur;
 import acme.framework.repositories.AbstractRepository;
@@ -41,5 +42,8 @@ public interface InvestorInvestmentRoundRepository extends AbstractRepository {
 
 	@Query("select a from InvestmentRound a where a.finalMode = true")
 	Collection<InvestmentRound> findManyPublic();
+
+	@Query("select a from Demand a where a.investmentRound.id=?1")
+	Demand findDemandByInvestmentId(int id);
 
 }

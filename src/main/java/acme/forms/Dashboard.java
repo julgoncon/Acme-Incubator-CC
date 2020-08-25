@@ -81,6 +81,12 @@ public class Dashboard implements Serializable {
 
 	Collection<Integer>			timeSeriesRejected;
 
+	Double						ratioInvestmentsRoundsWithDemand;
+
+	Double						ratioApplicationsWithOffer;
+
+	Double						rationApplicationsWithDemand;
+
 	// Derived attributes ---------------------------------------------------
 
 }

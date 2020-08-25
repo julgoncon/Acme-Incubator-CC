@@ -126,6 +126,7 @@ public class InvestorApplicationCreateService implements AbstractCreateService<I
 			Boolean isUnique = true;
 			for (String t : tickers) {
 				if (t.equals(ticker)) {
+
 					isUnique = false;
 				}
 			}

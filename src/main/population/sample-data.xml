@@ -682,7 +682,7 @@
 		<property name="ticker" value="TEC-19-998233"/>
 		<property name="creation" value="2019/07/25 12:00"/>
 		<property name="status" value="accepted"/>
-		<property name="changeStatus" value="2019/08/10 12:00"/>
+		<property name="changeStatus" value="2019/08/16 12:00"/>
 		<property name="statement" value="statement2"/>
 		<property name="investmentOffer">
 			<bean class="acme.framework.datatypes.Money">

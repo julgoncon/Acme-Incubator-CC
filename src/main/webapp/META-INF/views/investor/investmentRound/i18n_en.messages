@@ -7,6 +7,7 @@ investor.investmentRound.form.label.description= Description:
 investor.investmentRound.form.label.amountMoney=Amount of money:
 investor.investmentRound.form.label.link=Link:
 investor.investmentRound.form.label.startupName=Start-up name:
+investor.investmentRound.form.label.text=Text:
 
 investor.investmentRound.list.label.ticker=Ticker
 investor.investmentRound.list.label.creation=Creation date

@@ -51,6 +51,10 @@
        drop 
        foreign key FK_6cyha9f1wpj0dpbxrrjddrqed;
 
+    alter table `demand` 
+       drop 
+       foreign key `FKcdh515andy8qaywdfdetgaal1`;
+
     alter table `entrepreneur` 
        drop 
        foreign key FK_r6tqltqvrlh1cyy8rsj5pev1q;
@@ -120,6 +124,8 @@
     drop table if exists `credit_card`;
 
     drop table if exists `customisation_parameter`;
+
+    drop table if exists `demand`;
 
     drop table if exists `entrepreneur`;
 
