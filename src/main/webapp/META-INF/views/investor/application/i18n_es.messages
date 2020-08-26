@@ -10,6 +10,7 @@ investor.application.form.label.password=Contraseña:
 investor.application.list.label.ticker=Ticker
 investor.application.list.label.status=Estado
 investor.application.list.label.investmentOffer= Oferta de inversión
+investor.application.list.label.investmentRound.ticker=Ticker de la ronda de inversión
 application.error.password=La contraseña debe tener un mínimo de XXX caracteres, al menos XXX letras, XXX dígitos y XXX signos de puntuación
 
 investor.application.form.label.tickerExplanation=* SSS denota las tres primeras letras en mayúsculas del sector de actividad (incluye X si fuera necesario) ,YY los últimos dos dígitos del año de creación, NNNNNN es un número de seis dígitos.
@@ -22,5 +23,6 @@ investor.application.error.investmentOffer=La oferta de inversión debe ser € 
 investor.application.error.offer=Si introduce un enlace o una contraseña, entonces debe introducir una oferta
 investor.application.error.moreInfo=Si introduce una contraseña, debe introducir un enlace
 
+investor.investmentRound.button=Ronda de inversión
 investor.application.button.create=Crear
 investor.application.button.return= Volver

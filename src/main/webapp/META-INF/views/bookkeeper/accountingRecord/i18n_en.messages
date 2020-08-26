@@ -5,7 +5,7 @@ bookkeeper.accountingRecord.form.label.title=Title:
 
 bookkeeper.accountingRecord.list.label.title=Title
 bookkeeper.accountingRecord.list.label.creation=Creation date
-
+bookkeeper.accountingRecord.list.label.investmentRound.ticker=Investment round ticker
 bookkeeper.accountingRecord.button.update= Update
 
 bookkeeper.accountingRecord.button.create= Create

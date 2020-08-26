@@ -67,7 +67,9 @@ public class EntrepreneurApplicationUpdateService implements AbstractUpdateServi
 		assert entity != null;
 		assert model != null;
 
+		int investmentId = entity.getInvestmentRound().getId();
 		request.unbind(entity, model, "status", "justification", "offer", "moreInfo", "password");
+		model.setAttribute("investmentId", investmentId);
 	}
 
 	@Override

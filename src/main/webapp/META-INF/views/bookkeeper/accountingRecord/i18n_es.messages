@@ -5,7 +5,7 @@ bookkeeper.accountingRecord.form.label.title=Título:
 
 bookkeeper.accountingRecord.list.label.title=Título
 bookkeeper.accountingRecord.list.label.creation=Fecha de creación
-
+bookkeeper.accountingRecord.list.label.investmentRound.ticker=Ticker de la ronda de inversión
 
 bookkeeper.accountingRecord.button.update= Actualizar
 

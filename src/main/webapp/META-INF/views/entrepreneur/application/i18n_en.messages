@@ -17,7 +17,8 @@ entrepreneur.application.list.label.creation=Creation date
 entrepreneur.application.list.label.status=Status
 entrepreneur.application.list.label.investmentRound=Investment round title
 entrepreneur.application.list.label.investmentOffer= Investment offer
-
+entrepreneur.application.list.label.investmentRound.ticker=Investment round ticker
+entrepreneur.investmentRound.button=Investment round
 entrepreneur.request.error.must-justificated=You must justify rejected applications
 entrepreneur.application.button.return= Return
 entrepreneur.application.button.update= Update

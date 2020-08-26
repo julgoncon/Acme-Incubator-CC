@@ -4,6 +4,7 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form>
+	<acme:form-hidden path="investmentId" />
 	<acme:form-textbox code="entrepreneur.application.form.label.ticker" path="ticker" readonly="true"/>
 	<acme:form-moment code="entrepreneur.application.form.label.creation" path="creation"  readonly="true"/>
 	<jstl:if test="${command== 'show' && status== 'accepted' || command== 'show' && status== 'rejected' || isJustificated==true}">
@@ -35,6 +36,7 @@
 	<acme:form-textbox code="entrepreneur.application.form.label.password" path="password" readonly="true"/>
 	
 	<acme:form-submit test ="${command == 'update' || command == 'show' && status == 'pending'}" code="entrepreneur.application.button.update" action="/entrepreneur/application/update"/>
-	
+	<acme:form-submit code="entrepreneur.investmentRound.button" method="get"
+		action="/entrepreneur/investment-round/show?id=${investmentId}"/>
 	<acme:form-return code="entrepreneur.application.button.return"/>	
 </acme:form>

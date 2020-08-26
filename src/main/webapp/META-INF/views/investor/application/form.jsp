@@ -30,5 +30,7 @@
 	<acme:form-submit test="${command == 'create'}" code="investor.application.button.create"
 		action="/investor/application/create?investmentId=${investmentId}" />
 
+	<acme:form-submit test="${command != 'create'}" code="investor.investmentRound.button" method="get"
+		action="/investor/investment-round/show?id=${investmentId}"/>
 	<acme:form-return code="investor.application.button.return"/>	
 </acme:form>

@@ -63,6 +63,7 @@ public class InvestorApplicationShowService implements AbstractShowService<Inves
 		Boolean hasDemand = demand != null;
 		request.unbind(entity, model, "ticker", "creation", "status", "statement", "investmentOffer", "offer", "moreInfo", "password");
 		model.setAttribute("hasDemand", hasDemand);
+		model.setAttribute("investmentId", investmentId);
 	}
 
 	@Override

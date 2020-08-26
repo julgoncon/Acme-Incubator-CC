@@ -36,7 +36,7 @@ public class BookkeeperAccountingRecordListMineService implements AbstractListSe
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "creation");
+		request.unbind(entity, model, "title", "creation", "investmentRound.ticker");
 
 	}
 

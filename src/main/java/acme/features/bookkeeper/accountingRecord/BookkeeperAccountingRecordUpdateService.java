@@ -63,8 +63,10 @@ public class BookkeeperAccountingRecordUpdateService implements AbstractUpdateSe
 		Boolean isMine = acc.getBookkeeper().getId() == bookkeeperId;
 		Boolean isDraft = acc.getDraft();
 		Boolean canUpdate = isMine && isDraft;
+		int investmentId = entity.getInvestmentRound().getId();
 		request.unbind(entity, model, "title", "draft", "body");
 		model.setAttribute("canUpdate", canUpdate);
+		model.setAttribute("investmentId", investmentId);
 	}
 
 	@Override

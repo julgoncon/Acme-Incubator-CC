@@ -4,6 +4,7 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form>
+	<acme:form-hidden path="investmentId" />
 	<acme:form-hidden path="canUpdate" />
 	<acme:form-textbox code="bookkeeper.accountingRecord.form.label.title" path="title"/>
 	<jstl:if test="${command == 'show' || command == 'update'}">

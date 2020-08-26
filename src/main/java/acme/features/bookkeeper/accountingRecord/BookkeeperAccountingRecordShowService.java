@@ -55,8 +55,10 @@ public class BookkeeperAccountingRecordShowService implements AbstractShowServic
 		Boolean isMine = acc.getBookkeeper().getId() == bookkeeperId;
 		Boolean isDraft = acc.getDraft();
 		Boolean canUpdate = isMine && isDraft;
+		int investmentId = entity.getInvestmentRound().getId();
 		request.unbind(entity, model, "title", "creation", "draft", "body");
 		model.setAttribute("canUpdate", canUpdate);
+		model.setAttribute("investmentId", investmentId);
 	}
 
 	@Override

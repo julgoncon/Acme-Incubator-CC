@@ -14,7 +14,8 @@ entrepreneur.application.list.label.creation=Fecha de creación
 entrepreneur.application.list.label.status=Estado
 entrepreneur.application.list.label.investmentRound=Título de la ronda de inversión
 entrepreneur.application.list.label.investmentOffer= Oferta de inversión
-
+entrepreneur.application.list.label.investmentRound.ticker=Ticker de la ronda de inversión
+entrepreneur.investmentRound.button=Ronda de inversión
 entrepreneur.application.button.return= Volver
 entrepreneur.application.button.update= Actualizar
 entrepreneur.request.error.must-justificated=Debes justificar las aplicaciones rechazadas
