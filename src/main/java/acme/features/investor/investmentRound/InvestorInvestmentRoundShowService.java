@@ -54,12 +54,16 @@ public class InvestorInvestmentRoundShowService implements AbstractShowService<I
 		assert model != null;
 
 		int investmentId = request.getModel().getInteger("id");
+		int activities = this.repository.findActivitiesByInvestmentRound(investmentId).size();
+		int accountingRecords = this.repository.findAccountingRecordsByInvestmentRound(investmentId).size();
 		Demand demand = this.repository.findDemandByInvestmentId(investmentId);
 		request.unbind(entity, model, "ticker", "creation", "kindRound", "title", "finalMode", "description", "amountMoney", "link", "entrepreneur.startupName");
 		if (demand != null) {
 			model.setAttribute("text", demand.getText());
 
 		}
+		model.setAttribute("activities", activities);
+		model.setAttribute("accountingRecords", accountingRecords);
 		model.setAttribute("investmentId", investmentId);
 
 	}

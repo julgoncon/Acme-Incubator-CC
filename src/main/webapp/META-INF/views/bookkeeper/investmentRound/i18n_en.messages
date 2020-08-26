@@ -14,6 +14,7 @@ bookkeeper.investmentRound.list.label.kindRound=Kind round
 bookkeeper.investmentRound.list.label.title=Title
 bookkeeper.investmentRound.list.label.amountMoney=Amount of money
 
+bookkeeper.investmentRound.button.list.activities= Activities list
 bookkeeper.investmentRound.button.accountingRecord=Accounting records list
 bookkeeper.investmentRound.button.accountingRecordCreate=Create accounting record
 bookkeeper.investmentRound.button.return= Return

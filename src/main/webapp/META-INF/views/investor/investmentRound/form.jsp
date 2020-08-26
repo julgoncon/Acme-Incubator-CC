@@ -5,7 +5,8 @@
 <%@page language="java" import="acme.framework.helpers.MessageHelper"%>
 
 <acme:form>
-
+	<acme:form-hidden path="accountingRecords" />
+	<acme:form-hidden path="activities" />
 	<acme:form-hidden path="investmentId" />
 	<acme:form-hidden path="finalMode" />
 	<acme:form-textbox code="investor.investmentRound.form.label.ticker" path="ticker" placeholder="SSS-YY-NNNNNN"/>
@@ -20,6 +21,12 @@
 
 	<acme:form-submit test="${finalMode == true}" code="investor.investmentRound.button.create.application" method="get"
 		action="/investor/application/create?investmentId=${investmentId}" />
+	
+	<acme:form-submit test="${activities > 0}" code="investor.investmentRound.button.list.activities" method="get"
+		action="/investor/activity/list-investment?investmentId=${investmentId}" />
+
+	<acme:form-submit test="${accountingRecords > 0}" code="investor.investmentRound.button.accountingRecord" method="get"
+		action="/investor/accounting-record/list-investment?investmentId=${investmentId}"/>
 	
 	<acme:form-return code="investor.investmentRound.button.return"/>	
 </acme:form>

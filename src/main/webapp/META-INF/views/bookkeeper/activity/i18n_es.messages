@@ -1,0 +1,9 @@
+bookkeeper.activity.form.label.budget=Presupuesto:
+bookkeeper.activity.form.label.startMoment=Momento de inicio:
+bookkeeper.activity.form.label.endMoment=Momento de finalización:
+bookkeeper.activity.form.label.title=Título:
+
+bookkeeper.activity.list.label.title=Título
+bookkeeper.activity.list.label.budget=Presupuesto
+
+bookkeeper.activity.button.return= Volver

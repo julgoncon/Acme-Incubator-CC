@@ -6,6 +6,7 @@ import java.util.Collection;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import acme.entities.accountingRecord.AccountingRecord;
 import acme.entities.activity.Activity;
 import acme.entities.customisationParameters.CustomisationParameter;
 import acme.entities.demand.Demand;
@@ -45,5 +46,8 @@ public interface InvestorInvestmentRoundRepository extends AbstractRepository {
 
 	@Query("select a from Demand a where a.investmentRound.id=?1")
 	Demand findDemandByInvestmentId(int id);
+
+	@Query("select a from AccountingRecord a where a.investmentRound.id=?1")
+	Collection<AccountingRecord> findAccountingRecordsByInvestmentRound(int id);
 
 }

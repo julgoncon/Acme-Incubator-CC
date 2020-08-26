@@ -7,6 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import acme.entities.accountingRecord.AccountingRecord;
+import acme.entities.activity.Activity;
 import acme.entities.investmentRound.InvestmentRound;
 import acme.framework.repositories.AbstractRepository;
 
@@ -27,5 +28,8 @@ public interface BookkeeperInvestmentRoundRepository extends AbstractRepository 
 
 	@Query("select a from InvestmentRound a where a.id = ?1")
 	InvestmentRound findOneById(int id);
+
+	@Query("select a from Activity a where a.investmentRound.id=?1")
+	Collection<Activity> findActivitiesByInvestmentRound(int id);
 
 }

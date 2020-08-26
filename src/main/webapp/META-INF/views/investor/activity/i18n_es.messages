@@ -1,0 +1,9 @@
+investor.activity.form.label.budget=Presupuesto:
+investor.activity.form.label.startMoment=Momento de inicio:
+investor.activity.form.label.endMoment=Momento de finalización:
+investor.activity.form.label.title=Título:
+
+investor.activity.list.label.title=Título
+investor.activity.list.label.budget=Presupuesto
+
+investor.activity.button.return= Volver

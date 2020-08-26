@@ -17,6 +17,8 @@ investor.investmentRound.list.label.amountMoney=Amount of money
 
 
 investor.investmentRound.button.create.application= Create application
+investor.investmentRound.button.list.activities= Activities list
+investor.investmentRound.button.accountingRecord= Accounting records list
 
 investor.investmentRound.error.amountMoney=The amount of money must be € or EUR
 investor.investmentRound.error.differentAmount=The total money from the activities must be equal to the amount of money of the investment round

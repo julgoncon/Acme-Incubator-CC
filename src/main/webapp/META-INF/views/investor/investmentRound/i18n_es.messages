@@ -17,6 +17,8 @@ investor.investmentRound.list.label.title=Título
 investor.investmentRound.list.label.amountMoney=Cantidad de dinero
 
 investor.investmentRound.button.create.application= Crear aplicacion
+investor.investmentRound.button.list.activities= Lista de actividades
+investor.investmentRound.button.accountingRecord= Lista de registros de contabilidad
 
 investor.investmentRound.error.amountMoney=La cantidad de dinero debe ser € o EUR
 investor.investmentRound.error.differentAmount=La suma de dinero de las actividades debe ser la misma que la cantidad de dinero de la ronda de inversión

@@ -1,0 +1,11 @@
+investor.accountingRecord.form.label.draft=Draft
+investor.accountingRecord.form.label.creation=Creation date:
+investor.accountingRecord.form.label.body=Body:
+investor.accountingRecord.form.label.title=Title:
+
+investor.accountingRecord.list.label.title=Title
+investor.accountingRecord.list.label.creation=Creation date
+
+
+
+investor.accountingRecord.button.return= Return

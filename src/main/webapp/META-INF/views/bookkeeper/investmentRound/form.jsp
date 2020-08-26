@@ -4,7 +4,7 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form>
-
+	<acme:form-hidden path="activities" />
 	<acme:form-hidden path="accountingRecords" />
 	<acme:form-textbox code="bookkeeper.investmentRound.form.label.ticker" path="ticker"/>
 	<acme:form-moment code="bookkeeper.investmentRound.form.label.creation" path="creation"/>
@@ -19,6 +19,9 @@
 	<acme:form-submit test="${accountingRecords > 0}" code="bookkeeper.investmentRound.button.accountingRecord" method="get"
 		action="/bookkeeper/accounting-record/list-investment?investmentId=${investmentId}"/>
 		
+	<acme:form-submit test="${activities > 0}" code="bookkeeper.investmentRound.button.list.activities" method="get"
+		action="/bookkeeper/activity/list-investment?investmentId=${investmentId}" />
+	
 	<acme:form-submit code="bookkeeper.investmentRound.button.accountingRecordCreate" method="get"
 		action="/bookkeeper/accounting-record/create?investmentId=${investmentId}"/>
 

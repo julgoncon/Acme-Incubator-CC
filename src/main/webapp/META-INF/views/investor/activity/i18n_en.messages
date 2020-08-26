@@ -1,0 +1,9 @@
+investor.activity.form.label.budget=Budget:
+investor.activity.form.label.startMoment=Start moment:
+investor.activity.form.label.endMoment=End moment:
+investor.activity.form.label.title=Title:
+
+investor.activity.list.label.title=Title
+investor.activity.list.label.budget=Budget
+
+investor.activity.button.return= Return

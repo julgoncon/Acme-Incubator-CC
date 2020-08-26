@@ -1,0 +1,10 @@
+investor.accountingRecord.form.label.draft=Borrador
+investor.accountingRecord.form.label.creation=Fecha de creación:
+investor.accountingRecord.form.label.body=Cuerpo:
+investor.accountingRecord.form.label.title=Título:
+
+investor.accountingRecord.list.label.title=Título
+investor.accountingRecord.list.label.creation=Fecha de creación
+
+
+investor.accountingRecord.button.return= Volver
