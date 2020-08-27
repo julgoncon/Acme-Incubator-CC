@@ -8,35 +8,35 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-administrator.dashboard.form.title.numberTechnologyRecordBySector = Numero de registros tecnologicos por sector
-administrator.dashboard.form.title.numberToolRecordBySector= Numero de registros de herramientas por sector
-administrator.dashboard.form.title.TechnologyRecordByOpenAndCloseSource = Ratio de registros tecnologicos por codigo abierto y codigo cerrado
-administrator.dashboard.form.title.ToolRecordByOpenAndCloseSource = Ratio de registros de herramientas por codigo abierto y codigo cerrado
+administrator.dashboard.form.title.numberTechnologyRecordBySector = Número de registros tecnológicos por sector
+administrator.dashboard.form.title.numberToolRecordBySector= Número de registros de herramientas por sector
+administrator.dashboard.form.title.TechnologyRecordByOpenAndCloseSource = Ratio de registros tecnológicos por código abierto y código cerrado
+administrator.dashboard.form.title.ToolRecordByOpenAndCloseSource = Ratio de registros de herramientas por código abierto y código cerrado
 
-administrator.dashboard.list.total = Numero total de:
+administrator.dashboard.list.total = Número total de:
 administrator.dashboard.list.label.totalNotice = Noticias
-administrator.dashboard.list.label.totalTechnologyRecord = Registros tecnologicos
+administrator.dashboard.list.label.totalTechnologyRecord = Registros tecnológicos
 administrator.dashboard.list.label.totalToolRecord = Registros de herramientas
 
 administrator.dashboard.label.average = Media de:
 administrator.dashboard.list.label.MoneyOfActiveInquiry=Dinero de las investigaciones activas
 administrator.dashboard.list.label.MoneyOfActiveOverture=Dinero de las propuestas activas
-administrator.dashboard.list.label.investmentRoundPerEntrepreneur= Rondas de inversion por empresario
+administrator.dashboard.list.label.investmentRoundPerEntrepreneur= Rondas de inversión por empresario
 administrator.dashboard.list.label.applicationsPerEntrepreneur= Aplicaciones por empresario
 administrator.dashboard.list.label.applicationsPerInvestor=Aplicaciones por inversor
 
 administrator.dashboard.list.ratio=Ratio de:
 administrator.dashboard.list.label.ratioInvestmentsRoundsWithDemand= Rondas de inversión con demandas
 administrator.dashboard.list.label.ratioApplicationsWithOffer= Aplicaciones con oferta
-administrator.dashboard.list.label.rationApplicationsWithDemand=Applications con demanda
+administrator.dashboard.list.label.rationApplicationsWithDemand=Aplicaciones con demanda
 
 administrator.dashboard.form.title.ApplicationStatus=Ratio de aplicaciones por estado
-administrator.dashboard.form.title.investmentRoundKind= Ratio de rondas de inversion por tipo de ronda
+administrator.dashboard.form.title.investmentRoundKind= Ratio de rondas de inversión por tipo de ronda
 
-administrator.dashboard.label.minimum = Minimo de:
-administrator.dashboard.label.maximum = Maximo de:
-administrator.dashboard.label.stddev = Desviacion estandar de:
+administrator.dashboard.label.minimum = Mínimo de:
+administrator.dashboard.label.maximum = Máximo de:
+administrator.dashboard.label.stddev = Desviación estándar de:
 
-administrator.dashboard.form.title.timeSeriesPending= Serie temporal de aplicaciones pendientes por dia durante los ultimos 15 dias
-administrator.dashboard.form.title.timeSeriesRejected= Serie temporal de aplicaciones rechazadas por dia durante los ultimos 15 dias
-administrator.dashboard.form.title.timeSeriesAccepted= Serie temporal de aplicaciones aceptadas por dia durante los ultimos 15 dias
+administrator.dashboard.form.title.timeSeriesPending= Serie temporal de aplicaciones pendientes por día durante los últimos 15 días
+administrator.dashboard.form.title.timeSeriesRejected= Serie temporal de aplicaciones rechazadas por día durante los últimos 15 días
+administrator.dashboard.form.title.timeSeriesAccepted= Serie temporal de aplicaciones aceptadas por día durante los últimos 15 días
