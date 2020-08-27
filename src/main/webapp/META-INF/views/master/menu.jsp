@@ -30,10 +30,11 @@
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown"/>
-			<acme:menu-suboption code="master.menu.administrator.notice.list" action="/administrator/notice/list"/>
-			<acme:menu-suboption code="master.menu.administrator.notice.create" action="/administrator/notice/create"/>
 			<acme:menu-suboption code="master.menu.administrator.customisation-parameters" action="/administrator/customisation-parameter/list"/>
 			<acme:menu-suboption code="master.menu.administrator.dashboard" action="/administrator/dashboard/show"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.notice.list" action="/administrator/notice/list"/>
+			<acme:menu-suboption code="master.menu.administrator.notice.create" action="/administrator/notice/create"/>
 			<acme:menu-suboption code="master.menu.administrator.inquiry.list" action="/administrator/inquiry/list"/>
 			<acme:menu-suboption code="master.menu.administrator.inquiry.create" action="/administrator/inquiry/create"/>
 			<acme:menu-suboption code="master.menu.administrator.overture.list" action="/administrator/overture/list"/>
@@ -85,6 +86,7 @@
 			<acme:menu-suboption code="master.menu.authenticated.inquiry.list" action="/authenticated/inquiry/list-active"/>
 			<acme:menu-suboption code="master.menu.authenticated.overture.list" action="/authenticated/overture/list-active"/>
 			<acme:menu-suboption code="master.menu.authenticated.challenge.list" action="/authenticated/challenge/list-active"/>
+			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.authenticated.investmentRound.list" action="/authenticated/investment-round/list-active"/>
 			<acme:menu-suboption code="master.menu.authenticated.forum.list" action="/authenticated/forum/list-involved"/>
 			<acme:menu-suboption code="master.menu.authenticated.forum.create" action="/authenticated/forum/create"/>

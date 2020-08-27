@@ -38,7 +38,7 @@ public class InvestmentRound extends DomainEntity {
 	private Date				creation;
 
 	@NotBlank
-	@Pattern(regexp = "^(SEED)?(ANGEL)?(SERIES-A)?(SERIES-B)?(SERIES-C)?(BRIDGE)?$")
+	@Pattern(regexp = "^(SEED)?(ANGEL)?(SERIES-A)?(SERIES-B)?(SERIES-C)?(BRIDGE)?$", message = "{investmentRound.error.kindRound}")
 	private String				kindRound;
 
 	@NotBlank

@@ -18,6 +18,6 @@ patron.creditCard.label.cvv = CVV:
 patron.creditCard.button.create = Crear
 patron.creditCard.button.update = Actualizar
 patron.creditCard.button.return = Volver
-
+creditCard.error.brandName= La marca debe ser VISA, MASTERCARD, DINNERS o AMEX
 patron.creditCard.create.errors.expirationYear = Año no válido
 patron.creditCard.create.errors.expirationMonth = Mes no válido

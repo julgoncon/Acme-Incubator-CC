@@ -1,6 +1,7 @@
 
 package acme.features.entrepreneur.application;
 
+import java.util.Collection;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -114,7 +115,17 @@ public class EntrepreneurApplicationUpdateService implements AbstractUpdateServi
 		if (entity.getStatus().equals("accepted") && !entrepreneurAndInvestor) {
 			int userId = entity.getInvestor().getUserAccount().getId();
 			Forum forum = this.repository.findOneForumByInvestmentRoundId(entity.getInvestmentRound().getId());
-			this.createidForumUser(forum.getId(), userId);
+			Collection<ForumUser> forumUsers = this.repository.findOneForumUserByForumId(forum.getId());
+			Authenticated user = this.repository.findOneAuthById(userId);
+			Boolean notInForum = true;
+			for (ForumUser fu : forumUsers) {
+				if (fu.getAuthenticated().getId() == user.getId()) {
+					notInForum = false;
+				}
+			}
+			if (notInForum) {
+				this.createidForumUser(forum.getId(), userId);
+			}
 
 		}
 

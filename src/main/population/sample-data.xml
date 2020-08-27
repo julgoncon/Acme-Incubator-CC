@@ -545,6 +545,14 @@
 		
 	</bean>
 	
+	<bean id="banner2" class="acme.entities.banner.Banner">
+		<property name="picture" value="http://www.picture2.com" />
+		<property name="slogan" value="slogan2" />
+		<property name="targetURL" value="http://www.targetURL2.com" />
+		<property name="patron" ref="patron2Patron"/>
+		
+	</bean>
+	
 	<bean id="creditCard1" class="acme.entities.creditCard.CreditCard">
 		<property name="holderName" value="Lida melgar zapata" />
 		<property name="brandName" value="VISA" />
@@ -608,11 +616,47 @@
 		
 	</bean>
 	
+	<bean id="investmentRound4" class="acme.entities.investmentRound.InvestmentRound">
+		<property name="ticker" value="ART-20-200567" />
+		<property name="creation" value="2020/03/21 12:00" />
+		<property name="kindRound" value="SEED" />
+		<property name="finalMode" value="true" />
+		<property name="title" value="title4" />
+		<property name="description" value="description4"/>
+		<property name="amountMoney">
+			<bean class="acme.framework.datatypes.Money">
+				<property name="amount" value="2000" />
+				<property name="currency" value="€" />
+			</bean>
+		</property>
+		<property name="link" value="http://x4.com"/>
+		<property name="entrepreneur" ref="entrepreneur2Entrepreneur"/>
+		
+	</bean>
+	
+	<bean id="investmentRound5" class="acme.entities.investmentRound.InvestmentRound">
+		<property name="ticker" value="SCI-19-333333" />
+		<property name="creation" value="2019/12/30 12:00" />
+		<property name="kindRound" value="BRIDGE" />
+		<property name="finalMode" value="false" />
+		<property name="title" value="title5" />
+		<property name="description" value="description5"/>
+		<property name="amountMoney">
+			<bean class="acme.framework.datatypes.Money">
+				<property name="amount" value="250" />
+				<property name="currency" value="€" />
+			</bean>
+		</property>
+		<property name="link" value="http://x5.com"/>
+		<property name="entrepreneur" ref="entrepreneur1Entrepreneur"/>
+		
+	</bean>
+	
 	
 	
 	<bean id="activity1" class="acme.entities.activity.Activity">
 		<property name="title" value="title1"/>
-		<property name="startMoment" value="2019/12/30 12:00"/>
+		<property name="startMoment" value="2020/12/30 12:00"/>
 		<property name="endMoment" value="2021/12/30 12:00"/>
 		<property name="budget">
 			<bean class="acme.framework.datatypes.Money">
@@ -625,7 +669,7 @@
 		
 	<bean id="activity2" class="acme.entities.activity.Activity">
 		<property name="title" value="title2"/>
-		<property name="startMoment" value="2019/12/30 12:00"/>
+		<property name="startMoment" value="2020/12/30 12:00"/>
 		<property name="endMoment" value="2021/12/30 12:00"/>
 		<property name="budget">
 			<bean class="acme.framework.datatypes.Money">
@@ -638,7 +682,7 @@
 	
 	<bean id="activity3" class="acme.entities.activity.Activity">
 		<property name="title" value="title3"/>
-		<property name="startMoment" value="2019/07/25 12:00"/>
+		<property name="startMoment" value="2021/07/25 12:00"/>
 		<property name="endMoment" value="2021/12/25 12:00"/>
 		<property name="budget">
 			<bean class="acme.framework.datatypes.Money">
@@ -651,7 +695,7 @@
 	
 	<bean id="activity4" class="acme.entities.activity.Activity">
 		<property name="title" value="title4"/>
-		<property name="startMoment" value="2019/07/25 12:00"/>
+		<property name="startMoment" value="2021/07/25 12:00"/>
 		<property name="endMoment" value="2021/12/25 12:00"/>
 		<property name="budget">
 			<bean class="acme.framework.datatypes.Money">
@@ -662,11 +706,24 @@
 		<property name="investmentRound" ref="investmentRound3"/>
 	</bean>
 	
+	<bean id="activity5" class="acme.entities.activity.Activity">
+		<property name="title" value="title4"/>
+		<property name="startMoment" value="2021/07/25 12:00"/>
+		<property name="endMoment" value="2021/12/25 12:00"/>
+		<property name="budget">
+			<bean class="acme.framework.datatypes.Money">
+				<property name="amount" value="2000" />
+				<property name="currency" value="€" />
+			</bean>
+		</property>
+		<property name="investmentRound" ref="investmentRound4"/>
+	</bean>
+	
 	<bean id="application1" class="acme.entities.application.Application">
-		<property name="ticker" value="TEC-19-112233"/>
-		<property name="creation" value="2020/07/30 12:00"/>
+		<property name="ticker" value="TEC-20-112233"/>
+		<property name="creation" value="2020/08/15 12:00"/>
 		<property name="status" value="accepted"/>
-		<property name="changeStatus" value="2020/08/10 12:00"/>
+		<property name="changeStatus" value="2020/08/25 12:00"/>
 		<property name="statement" value="statement1"/>
 		<property name="investmentOffer">
 			<bean class="acme.framework.datatypes.Money">
@@ -681,8 +738,8 @@
 	<bean id="application2" class="acme.entities.application.Application">
 		<property name="ticker" value="TEC-19-998233"/>
 		<property name="creation" value="2019/07/25 12:00"/>
-		<property name="status" value="accepted"/>
-		<property name="changeStatus" value="2019/08/16 12:00"/>
+		<property name="status" value="rejected"/>
+		<property name="changeStatus" value="2019/08/10 12:00"/>
 		<property name="statement" value="statement2"/>
 		<property name="investmentOffer">
 			<bean class="acme.framework.datatypes.Money">
@@ -690,15 +747,16 @@
 				<property name="currency" value="€" />
 			</bean>
 		</property>
+		<property name="justification" value="need higher offer"/>
 		<property name="investor" ref="investor1Investor"/>
 		<property name="investmentRound" ref="investmentRound1"/>
 	</bean>
 	
 	<bean id="application3" class="acme.entities.application.Application">
-		<property name="ticker" value="TEC-19-998111"/>
-		<property name="creation" value="2020/07/01 12:00"/>
+		<property name="ticker" value="ART-20-998111"/>
+		<property name="creation" value="2020/07/20 12:00"/>
 		<property name="status" value="rejected"/>
-		<property name="changeStatus" value="2020/08/02 12:00"/>
+		<property name="changeStatus" value="2020/08/26 12:00"/>
 		<property name="statement" value="statement3"/>
 		<property name="investmentOffer">
 			<bean class="acme.framework.datatypes.Money">
@@ -713,10 +771,10 @@
 	</bean>
 	
 	<bean id="application4" class="acme.entities.application.Application">
-		<property name="ticker" value="TEC-19-998771"/>
-		<property name="creation" value="2020/08/10 12:00"/>
+		<property name="ticker" value="ART-20-998771"/>
+		<property name="creation" value="2020/08/25 12:00"/>
 		<property name="status" value="pending"/>
-		<property name="statement" value="statement3"/>
+		<property name="statement" value="statement4"/>
 		<property name="investmentOffer">
 			<bean class="acme.framework.datatypes.Money">
 				<property name="amount" value="100" />
@@ -724,13 +782,13 @@
 			</bean>
 		</property>
 		<property name="investor" ref="investor2Investor"/>
-		<property name="investmentRound" ref="investmentRound1"/>
+		<property name="investmentRound" ref="investmentRound4"/>
 		
 	</bean>
 	
 	<bean id="application5" class="acme.entities.application.Application">
-		<property name="ticker" value="TEC-19-001111"/>
-		<property name="creation" value="2020/08/01 12:00"/>
+		<property name="ticker" value="ART-20-001111"/>
+		<property name="creation" value="2020/08/16 12:00"/>
 		<property name="status" value="pending"/>
 		<property name="statement" value="statement5"/>
 		<property name="investmentOffer">
@@ -747,16 +805,14 @@
 	
 	<bean id="forum1" class="acme.entities.forum.Forum">
 		<property name="investmentRound" ref="investmentRound1"/>
-		<property name="title" value="forum discussion"/>
+		<property name="title" value="title1"/>
 	</bean>
 
 	<bean id="forum2" class="acme.entities.forum.Forum">
-		<property name="investmentRound" ref="investmentRound2"/>
 		<property name="title" value="forum 2"/>
 	</bean>
 	
 	<bean id="forum3" class="acme.entities.forum.Forum">
-		<property name="investmentRound" ref="investmentRound3"/>
 		<property name="title" value="forum 3"/>
 	</bean>
 	
@@ -786,7 +842,7 @@
 	
 	<bean id="message1" class="acme.entities.message.Message">
 		<property name="title" value="appointment"/>
-		<property name="creation" value="2019/07/25 12:00"/>
+		<property name="creation" value="2020/08/26 12:00"/>
 		<property name="tags" value="buy"/>
 		<property name="body" value="hey worap"/>
 		
@@ -806,7 +862,7 @@
 	
 	<bean id="message3" class="acme.entities.message.Message">
 		<property name="title" value="appointment"/>
-		<property name="creation" value="2019/07/25 20:00"/>
+		<property name="creation" value="2020/08/26 20:00"/>
 		<property name="tags" value="sell"/>
 		<property name="body" value="hi worap"/>
 		
@@ -817,7 +873,7 @@
 	<bean id="accountingRecord1" class="acme.entities.accountingRecord.AccountingRecord">
 		<property name="title" value="accounting 1"/>
 		<property name="draft" value="false"/>
-		<property name="creation" value="2019/03/25 20:00"/>
+		<property name="creation" value="2020/08/24 20:00"/>
 		<property name="body" value="body1"/>
 		
 		<property name="bookkeeper" ref="bookkeeper1Bookkeeper"/>
@@ -827,7 +883,7 @@
 	<bean id="accountingRecord2" class="acme.entities.accountingRecord.AccountingRecord">
 		<property name="title" value="accounting 2"/>
 		<property name="draft" value="false"/>
-		<property name="creation" value="2019/05/20 20:00"/>
+		<property name="creation" value="2020/08/26 20:00"/>
 		<property name="body" value="body1"/>
 		
 		<property name="bookkeeper" ref="bookkeeper2Bookkeeper"/>

@@ -23,7 +23,7 @@ entrepreneur.investmentRound.error.isValidNumber=NNNNNN must be 6 digits
 entrepreneur.investmentRound.error.isValidAS=SSS must be 3 first letters of your activity sector or SXX or SSX (in capital letters)
 entrepreneur.investmentRound.error.tickerUnique=Ticker must be unique
 entrepreneur.investmentRound.error.spam= Spam detected
-
+investmentRound.error.kindRound=Kind of investment round must be SEED, ANGEL, SERIES-A, SERIES-B, SERIES-C or BRIDGE
 entrepreneur.investmentRound.button.list.activities= Activities list
 entrepreneur.investmentRound.button.create.activities= Create activity
 entrepreneur.investmentRound.error.amountMoney=The amount of money must be € or EUR

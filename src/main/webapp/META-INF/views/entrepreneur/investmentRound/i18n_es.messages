@@ -22,7 +22,7 @@ entrepreneur.investmentRound.error.isValidNumber=NNNNNN debe ser 6 dígitos
 entrepreneur.investmentRound.error.isValidAS=SSS debe ser las 3 primeras letras de tu sector de actividad en mayúscula o SXX o SSX si el sector fuera más corto
 entrepreneur.investmentRound.error.tickerUnique=El ticker debe ser único
 entrepreneur.investmentRound.error.spam= Spam detectado
-
+investmentRound.error.kindRound=El tipo de ronda de inversión debe ser SEED, ANGEL, SERIES-A, SERIES-B, SERIES-C o BRIDGE
 entrepreneur.investmentRound.button.list.activities=Lista de actividades
 entrepreneur.investmentRound.button.create.activities= Crear actividad
 entrepreneur.investmentRound.error.amountMoney=La cantidad de dinero debe ser € o EUR

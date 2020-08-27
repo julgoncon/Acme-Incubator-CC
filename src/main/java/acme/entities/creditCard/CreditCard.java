@@ -28,7 +28,7 @@ public class CreditCard extends DomainEntity {
 	private String				holderName;
 
 	@NotBlank
-	@Pattern(regexp = "^VISA|MASTERCARD|DINNERS|AMEX$")
+	@Pattern(regexp = "^VISA|MASTERCARD|DINNERS|AMEX$", message = "{creditCard.error.brandName}")
 	private String				brandName;
 
 	@NotBlank
