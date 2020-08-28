@@ -112,9 +112,9 @@ public class EntrepreneurApplicationUpdateService implements AbstractUpdateServi
 
 		this.repository.save(entity);
 		Boolean entrepreneurAndInvestor = entity.getInvestor().getUserAccount().getId() == request.getPrincipal().getAccountId();
-		if (entity.getStatus().equals("accepted") && !entrepreneurAndInvestor) {
+		Forum forum = this.repository.findOneForumByInvestmentRoundId(entity.getInvestmentRound().getId());
+		if (entity.getStatus().equals("accepted") && !entrepreneurAndInvestor && forum != null) {
 			int userId = entity.getInvestor().getUserAccount().getId();
-			Forum forum = this.repository.findOneForumByInvestmentRoundId(entity.getInvestmentRound().getId());
 			Collection<ForumUser> forumUsers = this.repository.findOneForumUserByForumId(forum.getId());
 			Authenticated user = this.repository.findOneAuthById(userId);
 			Boolean notInForum = true;

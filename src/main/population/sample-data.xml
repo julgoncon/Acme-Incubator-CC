@@ -736,10 +736,10 @@
 	</bean>
 	
 	<bean id="application2" class="acme.entities.application.Application">
-		<property name="ticker" value="TEC-19-998233"/>
-		<property name="creation" value="2019/07/25 12:00"/>
+		<property name="ticker" value="TEC-20-998233"/>
+		<property name="creation" value="2020/01/25 12:00"/>
 		<property name="status" value="rejected"/>
-		<property name="changeStatus" value="2019/08/10 12:00"/>
+		<property name="changeStatus" value="2020/02/10 12:00"/>
 		<property name="statement" value="statement2"/>
 		<property name="investmentOffer">
 			<bean class="acme.framework.datatypes.Money">
@@ -809,10 +809,29 @@
 	</bean>
 
 	<bean id="forum2" class="acme.entities.forum.Forum">
-		<property name="title" value="forum 2"/>
+		<property name="investmentRound" ref="investmentRound2"/>
+		<property name="title" value="title2"/>
 	</bean>
 	
 	<bean id="forum3" class="acme.entities.forum.Forum">
+		<property name="investmentRound" ref="investmentRound3"/>
+		<property name="title" value="title3"/>
+	</bean>
+	
+	<bean id="forum4" class="acme.entities.forum.Forum">
+		<property name="investmentRound" ref="investmentRound4"/>
+		<property name="title" value="title4"/>
+	</bean>
+	
+	<bean id="forum5" class="acme.entities.forum.Forum">
+		<property name="investmentRound" ref="investmentRound5"/>
+		<property name="title" value="title5"/>
+	</bean>
+	<bean id="forum6" class="acme.entities.forum.Forum">
+		<property name="title" value="forum 2"/>
+	</bean>
+	
+	<bean id="forum7" class="acme.entities.forum.Forum">
 		<property name="title" value="forum 3"/>
 	</bean>
 	
@@ -829,13 +848,37 @@
 	</bean>
 	
 	<bean id="forumUser3" class="acme.entities.forumUser.ForumUser">
-		<property name="forum" ref="forum2"/>
+		<property name="forum" ref="forum6"/>
 		<property name="authenticated" ref="entrepreneur2Authenticated"/>
 		<property name="creator" value="true" />
 	</bean>
 	
 	<bean id="forumUser4" class="acme.entities.forumUser.ForumUser">
+		<property name="forum" ref="forum7"/>
+		<property name="authenticated" ref="entrepreneur1Authenticated"/>
+		<property name="creator" value="true" />
+	</bean>
+	
+	<bean id="forumUser5" class="acme.entities.forumUser.ForumUser">
+		<property name="forum" ref="forum2"/>
+		<property name="authenticated" ref="entrepreneur2Authenticated"/>
+		<property name="creator" value="true" />
+	</bean>
+	
+	<bean id="forumUser6" class="acme.entities.forumUser.ForumUser">
 		<property name="forum" ref="forum3"/>
+		<property name="authenticated" ref="entrepreneur1Authenticated"/>
+		<property name="creator" value="true" />
+	</bean>
+	
+	<bean id="forumUser7" class="acme.entities.forumUser.ForumUser">
+		<property name="forum" ref="forum4"/>
+		<property name="authenticated" ref="entrepreneur2Authenticated"/>
+		<property name="creator" value="true" />
+	</bean>
+	
+	<bean id="forumUser8" class="acme.entities.forumUser.ForumUser">
+		<property name="forum" ref="forum5"/>
 		<property name="authenticated" ref="entrepreneur1Authenticated"/>
 		<property name="creator" value="true" />
 	</bean>
@@ -888,5 +931,11 @@
 		
 		<property name="bookkeeper" ref="bookkeeper2Bookkeeper"/>
 		<property name="investmentRound" ref="investmentRound2"/>
+	</bean>
+	
+	<bean id="bookkeeperRequest1" class="acme.entities.bookkeeperRequest.BookkeeperRequest">
+		<property name="firmName" value="http://firmName.com"></property>
+		<property name="responsibilityStatement" value="http://responsibilityStatement.com"></property>
+		<property name="userAccount" ref="entrepreneur1UserAccount" />
 	</bean>
 </beans>

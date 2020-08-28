@@ -27,7 +27,7 @@ public class EntrepreneurDemandShowService implements AbstractShowService<Entrep
 	public boolean authorise(final Request<Demand> request) {
 		assert request != null;
 
-		boolean result;
+		boolean result = false;
 		int demandId;
 		InvestmentRound investmentRound;
 		Entrepreneur entrepreneur;
@@ -35,11 +35,12 @@ public class EntrepreneurDemandShowService implements AbstractShowService<Entrep
 
 		demandId = request.getModel().getInteger("id");
 		Demand demand = this.repository.findById(demandId);
-		investmentRound = demand.getInvestmentRound();
-		entrepreneur = investmentRound.getEntrepreneur();
-		principal = request.getPrincipal();
-		result = entrepreneur.getUserAccount().getId() == principal.getAccountId() && demand != null;
-
+		if (demand != null) {
+			investmentRound = demand.getInvestmentRound();
+			entrepreneur = investmentRound.getEntrepreneur();
+			principal = request.getPrincipal();
+			result = entrepreneur.getUserAccount().getId() == principal.getAccountId() && demand != null;
+		}
 		return result;
 	}
 
