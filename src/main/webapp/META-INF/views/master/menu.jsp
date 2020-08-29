@@ -97,7 +97,7 @@
 			<acme:menu-suboption code="master.menu.entrepreneur.investmentRound.listMine" action="/entrepreneur/investment-round/list-mine"/>
 			<acme:menu-suboption code="master.menu.entrepreneur.application.listMine" action="/entrepreneur/application/list-mine"/>
 			<acme:menu-suboption code="master.menu.entrepreneur.investmentRound.create" action="/entrepreneur/investment-round/create"/>
-			
+			<acme:menu-suboption code="master.menu.entrepreneur.demand.listMine" action="/entrepreneur/demand/list-mine"/>
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.bookkeeper" access="hasRole('Bookkeeper')">

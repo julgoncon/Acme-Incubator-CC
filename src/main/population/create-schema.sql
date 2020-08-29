@@ -329,6 +329,7 @@
     ) engine=InnoDB;
 
     insert into `hibernate_sequence` values ( 1 );
+create index IDX7e2w3ogjnqbcm0a24l285mggq on `accounting_record` (`draft`);
 create index IDX2q2747fhp099wkn3j2yt05fhs on `application` (`status`);
 
     alter table `application` 
@@ -337,6 +338,7 @@ create index IDXnr284tes3x8hnd3h716tmb3fr on `challenge` (`deadline`);
 
     alter table `demand` 
        add constraint UK_8yl8ifwg8wfu7fam660e5tb24 unique (`investment_round_id`);
+create index IDXinl7voaj5wruhi85wub4vuali on `investment_round` (`final_mode`);
 
     alter table `investment_round` 
        add constraint UK_408l1ohatdkkut5bkt0eu6ifs unique (`ticker`);

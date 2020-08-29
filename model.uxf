@@ -601,7 +601,7 @@ published by ^</panel_attributes>
       <x>1575</x>
       <y>658</y>
       <w>315</w>
-      <h>105</h>
+      <h>133</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Application
@@ -611,7 +611,9 @@ Application
 + status: String {NotBlank, Pattern(^(pending)?(accepted)?(rejected)?$)}
 + statement: String {NotBlank,Column(length = 1024)}
 + investmentOffer: Money {Valid,NotNull}
-</panel_attributes>
++ offer: String
++ moreInfo: String{URL}
++ password: String {Pattern(^((?=[^ ]{10,})(?=(.*\\p{L}.*){1,})(?=(.*\\p{N}.*){1,})((.*\\p{P}.*){1,}))?$)}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -954,5 +956,36 @@ m1=1
 m2=1..*
 writes v</panel_attributes>
     <additional_attributes>70.0;170.0;10.0;170.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>805</x>
+      <y>770</y>
+      <w>189</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-x
+m1=1
+m2=0..1
+
+has &gt;</panel_attributes>
+    <additional_attributes>250.0;20.0;10.0;20.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>714</x>
+      <y>826</y>
+      <w>196</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Demand
+--
++ text: String {NotBlank,Length(max = 256)}
+
+</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>

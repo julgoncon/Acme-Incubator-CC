@@ -80,6 +80,7 @@ master.menu.entrepreneur=Entrepreneur
 master.menu.entrepreneur.investmentRound.listMine= My investment rounds list
 master.menu.entrepreneur.application.listMine= Applications list from my investment rounds
 master.menu.entrepreneur.investmentRound.create=Create investment round
+master.menu.entrepreneur.demand.listMine=My demands
 
 # master.menu.bookkeeper ###################################################
 
