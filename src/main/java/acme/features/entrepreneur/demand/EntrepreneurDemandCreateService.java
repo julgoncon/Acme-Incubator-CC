@@ -50,11 +50,7 @@ public class EntrepreneurDemandCreateService implements AbstractCreateService<En
 		assert errors != null;
 
 		request.bind(entity, errors);
-		/**
-		 * Integer jobId = request.getModel().getInteger("jobId");
-		 * Job job = this.repository.findJobById(jobId);
-		 * entity.setJob(job);
-		 **/
+
 	}
 
 	@Override
