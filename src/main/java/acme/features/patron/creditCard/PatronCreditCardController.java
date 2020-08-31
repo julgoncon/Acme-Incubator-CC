@@ -24,6 +24,9 @@ public class PatronCreditCardController extends AbstractController<Patron, Credi
 	@Autowired
 	private PatronCreditCardUpdateService	updateService;
 
+	@Autowired
+	private PatronCreditCardShowService		showService;
+
 	// Constructors ----------------------------------------------------------
 
 
@@ -31,6 +34,7 @@ public class PatronCreditCardController extends AbstractController<Patron, Credi
 	private void initialise() {
 		super.addBasicCommand(BasicCommand.CREATE, this.createService);
 		super.addBasicCommand(BasicCommand.UPDATE, this.updateService);
+		super.addBasicCommand(BasicCommand.SHOW, this.showService);
 
 	}
 

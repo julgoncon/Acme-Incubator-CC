@@ -12,7 +12,7 @@
 patron.banner.form.label.picture = Picture:
 patron.banner.form.label.slogan = Slogan:
 patron.banner.form.label.targetURL = Target URL:
-
+patron.banner.form.label.addCreditCard= Add your current credit card to this banner
 patron.banner.form.label.creditCard = Credit card
 patron.banner.form.label.holderName = Holder name:
 patron.banner.form.label.brandName = Brand name:

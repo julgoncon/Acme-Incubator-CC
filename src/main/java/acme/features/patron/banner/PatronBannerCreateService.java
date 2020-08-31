@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.banner.Banner;
+import acme.entities.creditCard.CreditCard;
 import acme.entities.customisationParameters.CustomisationParameter;
 import acme.entities.roles.Patron;
 import acme.framework.components.Errors;
@@ -47,6 +48,7 @@ public class PatronBannerCreateService implements AbstractCreateService<Patron, 
 		assert model != null;
 
 		request.unbind(entity, model, "picture", "slogan", "targetURL");
+		model.setAttribute("addCreditCard", false);
 	}
 
 	@Override
@@ -74,9 +76,27 @@ public class PatronBannerCreateService implements AbstractCreateService<Patron, 
 	public void create(final Request<Banner> request, final Banner entity) {
 		int patronId = request.getPrincipal().getActiveRoleId();
 		Patron patron = this.repository.findOnePatronById(patronId);
-		entity.setPatron(patron);
-		entity.setCreditCard(patron.getCreditCard());
-		this.repository.save(entity);
+		CreditCard creditCard = patron.getCreditCard();
+		Boolean addCreditCard = request.getModel().getBoolean("addCreditCard");
+		if (addCreditCard && creditCard != null) {
+			CreditCard creditCardCopy = new CreditCard();
+			creditCardCopy.setBrandName(creditCard.getBrandName());
+			creditCardCopy.setCvv(creditCard.getCvv());
+			creditCardCopy.setExpirationMonth(creditCard.getExpirationMonth());
+			creditCardCopy.setExpirationYear(creditCard.getExpirationYear());
+			creditCardCopy.setHolderName(creditCard.getHolderName());
+			creditCardCopy.setNumber(creditCard.getNumber());
+
+			this.repository.save(creditCardCopy);
+
+			entity.setPatron(patron);
+			entity.setCreditCard(creditCardCopy);
+			this.repository.save(entity);
+		} else {
+			entity.setPatron(patron);
+			this.repository.save(entity);
+		}
+
 	}
 
 	public boolean containsSpamWords(final String text) {

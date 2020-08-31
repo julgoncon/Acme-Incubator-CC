@@ -80,9 +80,8 @@ public class PatronBannerUpdateService implements AbstractUpdateService<Patron, 
 
 	@Override
 	public void update(final Request<Banner> request, final Banner entity) {
-		int patronId = request.getPrincipal().getActiveRoleId();
-		Patron patron = this.repository.findOnePatronById(patronId);
-		entity.setCreditCard(patron.getCreditCard());
+		assert request != null;
+		assert entity != null;
 		this.repository.save(entity);
 	}
 

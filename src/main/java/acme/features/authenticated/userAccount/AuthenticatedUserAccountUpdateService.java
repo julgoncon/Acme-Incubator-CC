@@ -76,8 +76,16 @@ public class AuthenticatedUserAccountUpdateService implements AbstractUpdateServ
 				hasCreditCard = true;
 			}
 		}
+		int creditCardId = 0;
+		if (hasCreditCard) {
+			creditCardId = patron.getCreditCard().getId();
+		}
+
 		request.unbind(entity, model, "username", "identity.name", "identity.surname", "identity.email");
 		model.setAttribute("hasCreditCard", hasCreditCard);
+		if (hasCreditCard) {
+			model.setAttribute("creditCardId", creditCardId);
+		}
 		if (request.isMethod(HttpMethod.POST)) {
 			request.transfer(model, "password");
 			request.transfer(model, "confirmation");

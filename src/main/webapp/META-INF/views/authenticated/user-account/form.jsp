@@ -20,6 +20,7 @@
 <acme:form>
 
 	<acme:form-hidden path="hasCreditCard" />
+	<acme:form-hidden path="creditCardId" />
 	<acme:form-textbox code="authenticated.user-account.form.label.username" path="username" readonly="true"/>
 	<acme:form-password code="authenticated.user-account.form.label.password" path="password"/>
 	<acme:form-password code="authenticated.user-account.form.label.confirmation" path="confirmation"/>
@@ -34,7 +35,7 @@
 	 		<acme:form-submit code="authenticated.patron.creditCard.create" method="get" action="/patron/credit-card/create"/>
 		</jstl:if>
 		<jstl:if test="${hasCreditCard ==true}">
-			<acme:form-submit code="authenticated.patron.creditCard.update" method="get" action="/patron/credit-card/update"/>
+			<acme:form-submit code="authenticated.patron.creditCard.show" method="get" action="/patron/credit-card/show?id=${creditCardId}"/>
 		</jstl:if>
 	 	
 	 </security:authorize>

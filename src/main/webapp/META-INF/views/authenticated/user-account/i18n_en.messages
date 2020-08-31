@@ -18,7 +18,7 @@ authenticated.user-account.form.label.surname = Surname:
 authenticated.user-account.form.label.email = Email:
  
 authenticated.patron.creditCard.create= Create credit card
-authenticated.patron.creditCard.update= Update credit card
+authenticated.patron.creditCard.show= Show credit card
 authenticated.user-account.form.button.update = Update
 authenticated.user-account.form.button.return = Return
 

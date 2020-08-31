@@ -22,7 +22,9 @@
 		<acme:form-url code="patron.banner.form.label.picture" path="picture" />
 		<acme:form-textbox code="patron.banner.form.label.slogan" path="slogan"/>
 		<acme:form-url code="patron.banner.form.label.targetURL" path="targetURL"/>
-		
+		<jstl:if test="${command=='create'}">
+		<acme:form-checkbox code="patron.banner.form.label.addCreditCard" path="addCreditCard"/>
+		</jstl:if>
 		<jstl:if test="${(command=='show' || command=='update') && hasCreditCard==true}">
 			<fieldset>
 			<legend><acme:message code="patron.banner.form.label.creditCard"/></legend>

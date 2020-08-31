@@ -26,8 +26,7 @@
 	<acme:form-integer code="patron.creditCard.label.cvv" path="cvv" placeholder="NNN"/>
 	
 	<acme:form-submit test="${command == 'create'}" code="patron.creditCard.button.create" action="/patron/credit-card/create"/>
-  	<acme:form-submit test="${command == 'update'}" code="patron.creditCard.button.update" action="/patron/credit-card/update"/>
-  	
+  	<acme:form-submit test="${command != 'create'}" code="patron.creditCard.button.update" action="/patron/credit-card/update"/>
   	<acme:form-return code="patron.creditCard.button.return"/>
   		
 </acme:form>

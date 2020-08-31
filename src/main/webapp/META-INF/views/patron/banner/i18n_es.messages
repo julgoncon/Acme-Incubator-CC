@@ -12,6 +12,7 @@
 patron.banner.form.label.picture = Foto:
 patron.banner.form.label.slogan = Slogan:
 patron.banner.form.label.targetURL = URL de destino:
+patron.banner.form.label.addCreditCard= Añadir tu tarjeta de crédito actual a este banner
 
 patron.banner.form.label.creditCard = Tarjeta de crédito
 patron.banner.form.label.holderName = Titular:

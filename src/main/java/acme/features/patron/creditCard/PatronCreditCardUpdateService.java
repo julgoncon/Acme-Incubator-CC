@@ -40,19 +40,15 @@ public class PatronCreditCardUpdateService implements AbstractUpdateService<Patr
 	public boolean authorise(final Request<CreditCard> request) {
 		assert request != null;
 
-		/*
-		 * boolean res = false;
-		 *
-		 * int creditCardId = request.getModel().getInteger("id");
-		 * int userAccountId = request.getPrincipal().getAccountId();
-		 * Sponsor sponsor = this.repository.findOneSponsorByUserAccountId(userAccountId);
-		 *
-		 * if (sponsor.getCreditCard().getId() == creditCardId) {
-		 * res = true;
-		 * }
-		 */
+		int creditCardId = request.getModel().getInteger("id");
+		int principalId = request.getPrincipal().getAccountId();
+		Patron patron = this.repository.findOnePatronByUserAccountId(principalId);
+		Boolean isMine = false;
+		if (patron.getCreditCard() != null) {
+			isMine = patron.getCreditCard().getId() == creditCardId;
+		}
+		return isMine;
 
-		return true;
 	}
 
 	@Override
@@ -104,6 +100,10 @@ public class PatronCreditCardUpdateService implements AbstractUpdateService<Patr
 
 			if (entity.getExpirationYear() > actualYear || entity.getExpirationYear() == actualYear && entity.getExpirationMonth() >= actualMonth) {
 				checkExpirationYear = true;
+				checkExpirationMonth = true;
+			}
+
+			if (entity.getExpirationYear() < actualYear) {
 				checkExpirationMonth = true;
 			}
 

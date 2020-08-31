@@ -76,6 +76,9 @@ public class PatronCreditCardCreateService implements AbstractCreateService<Patr
 				checkExpirationYear = true;
 				checkExpirationMonth = true;
 			}
+			if (entity.getExpirationYear() < actualYear) {
+				checkExpirationMonth = true;
+			}
 
 			errors.state(request, checkExpirationYear, "expirationYear", "patron.creditCard.create.errors.expirationYear");
 			errors.state(request, checkExpirationMonth, "expirationMonth", "patron.creditCard.create.errors.expirationMonth");
