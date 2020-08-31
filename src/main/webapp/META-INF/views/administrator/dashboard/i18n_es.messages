@@ -26,9 +26,9 @@ administrator.dashboard.list.label.applicationsPerEntrepreneur= Aplicaciones por
 administrator.dashboard.list.label.applicationsPerInvestor=Aplicaciones por inversor
 
 administrator.dashboard.list.ratio=Ratio de:
-administrator.dashboard.list.label.ratioInvestmentsRoundsWithDemand= Rondas de inversión con demandas
+administrator.dashboard.list.label.ratioInvestmentsRoundsWithDemand= Rondas de inversión con demand
 administrator.dashboard.list.label.ratioApplicationsWithOffer= Aplicaciones con oferta
-administrator.dashboard.list.label.rationApplicationsWithDemand=Aplicaciones con demanda
+administrator.dashboard.list.label.rationApplicationsWithDemand=Aplicaciones con demand
 
 administrator.dashboard.form.title.ApplicationStatus=Ratio de aplicaciones por estado
 administrator.dashboard.form.title.investmentRoundKind= Ratio de rondas de inversión por tipo de ronda
