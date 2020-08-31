@@ -33,6 +33,8 @@ public class EntrepreneurDemandListMineService implements AbstractListService<En
 		assert model != null;
 
 		request.unbind(entity, model, "text");
+		String ticker = entity.getInvestmentRound().getTicker();
+		model.setAttribute("investmentRoundTicker", ticker);
 
 	}
 

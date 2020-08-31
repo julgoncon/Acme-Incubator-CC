@@ -16,7 +16,8 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:list>
-	<acme:list-column code="entrepreneur.demand.list.label.text" path="text" width="100%"/>
+	<acme:list-column code="entrepreneur.demand.list.label.text" path="text" width="50%"/>
+	<acme:list-column code="entrepreneur.demand.list.label.investmentRoundTicker" path="investmentRoundTicker" width="50%"/>
 
 	
 </acme:list>

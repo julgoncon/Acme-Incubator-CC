@@ -11,6 +11,7 @@
 
 entrepreneur.demand.form.label.text = Texto:
 entrepreneur.demand.list.label.text= Texto
+entrepreneur.demand.list.label.investmentRoundTicker=Ticker de la ronda de inversión
 entrepreneur.demand.form.button.create= Crear
 entrepreneur.demand.form.button.update= Actualizar
 entrepreneur.demand.form.button.delete= Borrar
