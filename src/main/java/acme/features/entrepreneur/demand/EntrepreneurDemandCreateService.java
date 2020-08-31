@@ -21,7 +21,6 @@ public class EntrepreneurDemandCreateService implements AbstractCreateService<En
 	@Autowired
 	EntrepreneurDemandRepository repository;
 
-	// AbstractCreateService<Employer, Job> interface ----------------
 
 
 	@Override
