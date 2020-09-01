@@ -85,7 +85,7 @@ public class Dashboard implements Serializable {
 
 	Double						ratioApplicationsWithOffer;
 
-	Double						rationApplicationsWithDemand;
+	Double						rationApplicationsWithPassword;
 
 	// Derived attributes ---------------------------------------------------
 

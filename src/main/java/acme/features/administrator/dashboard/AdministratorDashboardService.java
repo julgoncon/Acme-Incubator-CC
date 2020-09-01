@@ -57,7 +57,7 @@ public class AdministratorDashboardService implements AbstractShowService<Admini
 			"getAverageMoneyOfActiveOverture", "getStandarddeviationMoneyOfActiveOverture", "getMinimumMoneyOfActiveInquiry", "getMaximumMoneyOfActiveInquiry", "getAverageMoneyOfActiveInquiry", "getStandarddeviationMoneyOfActiveInquiry",
 			"ratioOfOpenSourceTechnologyRecord", "ratioOfOpenSourceToolRecord", "ratioOfCloseSourceTechnologyRecord", "ratioOfCloseSourceToolRecord", "getAverageInvestmentRoundPerEntrepreneur", "getAverageApplicationsPerEntrepreneur",
 			"getAverageApplicationsPerInvestor", "ratioOfPendingApplications", "ratioOfAcceptedApplications", "ratioOfRejectedApplications", "ratioOfSeedInvestmentRound", "ratioOfAngelInvestmentRound", "ratioOfSeriesAInvestmentRound",
-			"ratioOfSeriesBInvestmentRound", "ratioOfSeriesCInvestmentRound", "ratioOfBridgeInvestmentRound", "timeSeriesPending", "timeSeriesAccepted", "timeSeriesRejected", "ratioInvestmentsRoundsWithDemand", "rationApplicationsWithDemand",
+			"ratioOfSeriesBInvestmentRound", "ratioOfSeriesCInvestmentRound", "ratioOfBridgeInvestmentRound", "timeSeriesPending", "timeSeriesAccepted", "timeSeriesRejected", "ratioInvestmentsRoundsWithDemand", "rationApplicationsWithPassword",
 			"ratioApplicationsWithOffer");
 	}
 
@@ -98,10 +98,11 @@ public class AdministratorDashboardService implements AbstractShowService<Admini
 		Double ratioOfBridgeInvestmentRound = this.repository.ratioOfBridgeInvestmentRound();
 		Double ratioInvestmentsRoundsWithDemand = this.repository.ratioInvestmentsRoundsWithDemand();
 		Double ratioApplicationsWithOffer = this.repository.ratioApplicationsWithOffer();
-		Double rationApplicationsWithDemand = this.repository.findAllDemands() / this.repository.findAllApplications();
+		Double ratioApplicationsWithPassword = this.repository.ratioApplicationsWithPassword();
+
 		result.setRatioInvestmentsRoundsWithDemand(ratioInvestmentsRoundsWithDemand);
 		result.setRatioApplicationsWithOffer(ratioApplicationsWithOffer);
-		result.setRationApplicationsWithDemand(rationApplicationsWithDemand);
+		result.setRationApplicationsWithPassword(ratioApplicationsWithPassword);
 
 		result.setNumberTechnologyRecordBySector(array);
 		result.setNumberToolRecordBySector(array2);

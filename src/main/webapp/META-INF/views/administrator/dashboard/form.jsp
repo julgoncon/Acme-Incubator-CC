@@ -511,12 +511,12 @@
     <tr>
         <th style="width: 33%"><acme:message code="administrator.dashboard.list.label.ratioInvestmentsRoundsWithDemand"/></th>
         <th style="width: 33%"><acme:message code="administrator.dashboard.list.label.ratioApplicationsWithOffer"/></th>
-        <th style="width: 33%"><acme:message code="administrator.dashboard.list.label.rationApplicationsWithDemand"/></th>
+        <th style="width: 33%"><acme:message code="administrator.dashboard.list.label.rationApplicationsWithPassword"/></th>
     </tr>
     <tr>
         <td>${ratioInvestmentsRoundsWithDemand}</td>
         <td>${ratioApplicationsWithOffer}</td>
-        <td>${rationApplicationsWithDemand}</td>
+        <td>${rationApplicationsWithPassword}</td>
     </tr>
 </table>
 
