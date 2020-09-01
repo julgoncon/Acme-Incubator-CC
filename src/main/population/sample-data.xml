@@ -541,7 +541,7 @@
 		<property name="slogan" value="slogan1" />
 		<property name="targetURL" value="http://www.targetURL1.com" />
 		<property name="patron" ref="patron1Patron"/>
-		<property name="creditCard" ref="creditCard1"/>
+		<property name="creditCard" ref="creditCard1copy"/>
 		
 	</bean>
 	
@@ -554,6 +554,15 @@
 	</bean>
 	
 	<bean id="creditCard1" class="acme.entities.creditCard.CreditCard">
+		<property name="holderName" value="Lida melgar zapata" />
+		<property name="brandName" value="VISA" />
+		<property name="number" value="1111222233334444"/>
+		<property name="expirationMonth" value="02"/>
+		<property name="expirationYear" value="22"/>
+		<property name="cvv" value="987"/>
+	</bean>
+	
+	<bean id="creditCard1copy" class="acme.entities.creditCard.CreditCard">
 		<property name="holderName" value="Lida melgar zapata" />
 		<property name="brandName" value="VISA" />
 		<property name="number" value="1111222233334444"/>

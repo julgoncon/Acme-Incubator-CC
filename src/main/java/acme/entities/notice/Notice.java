@@ -37,7 +37,6 @@ public class Notice extends DomainEntity {
 
 	@Temporal(TemporalType.TIMESTAMP)
 	@Past
-	@NotNull
 	private Date				creation;
 
 	@Temporal(TemporalType.TIMESTAMP)

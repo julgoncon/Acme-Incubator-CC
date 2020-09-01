@@ -33,7 +33,6 @@ public class Inquiry extends DomainEntity {
 
 	@Temporal(TemporalType.TIMESTAMP)
 	@Past
-	@NotNull
 	private Date				creation;
 
 	@Temporal(TemporalType.TIMESTAMP)
