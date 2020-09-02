@@ -22,7 +22,6 @@ public class EntrepreneurDemandCreateService implements AbstractCreateService<En
 	EntrepreneurDemandRepository repository;
 
 
-
 	@Override
 	public boolean authorise(final Request<Demand> request) {
 		assert request != null;
@@ -35,10 +34,12 @@ public class EntrepreneurDemandCreateService implements AbstractCreateService<En
 
 		investmentId = request.getModel().getInteger("investmentId");
 		investmentRound = this.repository.findInvestmentRoundById(investmentId);
-		entrepreneur = investmentRound.getEntrepreneur();
-		principal = request.getPrincipal();
-		result = entrepreneur.getUserAccount().getId() == principal.getAccountId();
-
+		result = false;
+		if (investmentRound != null) {
+			entrepreneur = investmentRound.getEntrepreneur();
+			principal = request.getPrincipal();
+			result = entrepreneur.getUserAccount().getId() == principal.getAccountId();
+		}
 		return result;
 	}
 

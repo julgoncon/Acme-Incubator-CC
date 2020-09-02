@@ -36,9 +36,12 @@ public class EntrepreneurDemandUpdateService implements AbstractUpdateService<En
 
 		investmentId = request.getModel().getInteger("investmentId");
 		investmentRound = this.repository.findInvestmentRoundById(investmentId);
-		entrepreneur = investmentRound.getEntrepreneur();
-		principal = request.getPrincipal();
-		result = entrepreneur.getUserAccount().getId() == principal.getAccountId();
+		result = false;
+		if (investmentRound != null) {
+			entrepreneur = investmentRound.getEntrepreneur();
+			principal = request.getPrincipal();
+			result = entrepreneur.getUserAccount().getId() == principal.getAccountId();
+		}
 
 		return result;
 	}
