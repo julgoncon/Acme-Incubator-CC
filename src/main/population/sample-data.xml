@@ -734,6 +734,9 @@
 		<property name="status" value="accepted"/>
 		<property name="changeStatus" value="2020/08/25 12:00"/>
 		<property name="statement" value="statement1"/>
+		<property name="offer" value="offer1"/>
+		<property name="moreInfo" value="http://more.com"/>
+		<property name="password" value="aaa!!@123sssss"/>
 		<property name="investmentOffer">
 			<bean class="acme.framework.datatypes.Money">
 				<property name="amount" value="200" />
@@ -947,4 +950,15 @@
 		<property name="responsibilityStatement" value="http://responsibilityStatement.com"></property>
 		<property name="userAccount" ref="entrepreneur1UserAccount" />
 	</bean>
+	
+	<bean id="demand1" class="acme.entities.demand.Demand">
+		<property name="text" value="This is a request"></property>
+		<property name="investmentRound" ref="investmentRound1" />
+	</bean>
+	
+	<bean id="demand2" class="acme.entities.demand.Demand">
+		<property name="text" value="This is another request"></property>
+		<property name="investmentRound" ref="investmentRound2" />
+	</bean>
+	
 </beans>
