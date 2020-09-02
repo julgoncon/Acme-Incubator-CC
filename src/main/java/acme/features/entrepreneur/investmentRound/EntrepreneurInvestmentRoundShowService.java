@@ -30,8 +30,6 @@ public class EntrepreneurInvestmentRoundShowService implements AbstractShowServi
 	@Autowired
 	EntrepreneurInvestmentRoundRepository repository;
 
-	// AbstractCreateService<Authenticated, Announcement> ---------------------------
-
 
 	@Override
 	public boolean authorise(final Request<InvestmentRound> request) {

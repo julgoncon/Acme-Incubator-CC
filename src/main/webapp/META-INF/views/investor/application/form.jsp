@@ -20,7 +20,7 @@
 		<acme:form-textarea code="investor.application.form.label.statement" path="statement"/>
 		<acme:form-money code="investor.application.form.label.investmentOffer" path="investmentOffer"/>
 	</jstl:if>
-	<jstl:if test="${hasDemand == true}">
+	<jstl:if test="${hasDemand == true || command == 'show'}">
 		<acme:form-textarea code="investor.application.form.label.offer" path="offer"/>
 		<acme:form-textbox code="investor.application.form.label.moreInfo" path="moreInfo"/>
 		<acme:form-password code="investor.application.form.label.password" path="password"/>
