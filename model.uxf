@@ -144,13 +144,19 @@ bg=yellow</panel_attributes>
       <x>385</x>
       <y>154</y>
       <w>140</w>
-      <h>63</h>
+      <h>119</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Enum&gt;&gt;
 CustomCommand
 --
 + LIST_ACTIVE
 + LIST_MINE
++ LIST_INVOLVED
++ LIST_ACCOUNTING_RECORD
++ LIST_NOT_ACCOUNTING_RECORD
++ LIST_INVESTMENT
++ ACCEPT
++ REJECT
 
 bg=orange</panel_attributes>
     <additional_attributes/>
@@ -279,7 +285,7 @@ has v</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>392</x>
-      <y>266</y>
+      <y>280</y>
       <w>217</w>
       <h>70</h>
     </coordinates>
@@ -298,15 +304,15 @@ bg=#B4E9FF</panel_attributes>
     <coordinates>
       <x>0</x>
       <y>364</y>
-      <w>238</w>
+      <w>280</w>
       <h>70</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 CustomisationParameter
 --
-+ spamWords: String {NotNull}
-+ activitySector: String {NotNull}
-+ spamThreshold: Double {Range(min=0,max=100)}
++ spamWords: String {NotBlank}
++ activitySector: String {NotBlank}
++ spamThreshold: Double {Range(min=0,max=100), NotNull}
 
 
 bg=#B4E9FF</panel_attributes>
@@ -315,10 +321,10 @@ bg=#B4E9FF</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>266</x>
+      <x>343</x>
       <y>357</y>
       <w>210</w>
-      <h>91</h>
+      <h>105</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Notice
@@ -360,7 +366,7 @@ bg=#B4E9FF</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>266</x>
-      <y>462</y>
+      <y>469</y>
       <w>301</w>
       <h>119</h>
     </coordinates>
@@ -573,7 +579,7 @@ Bookkeeper
 InvestmentRound
 --
 + ticker: {Unique, NotBlank}
-+ creation: Date {Temporal(TIMESTAMP), NotNull, Past}
++ creation: Date {Temporal(TIMESTAMP), Past}
 + kindRound: String {NotBlank, Pattern(^(SEED)?(ANGEL)?(SERIES-A)?(SERIES-B)?(SERIES-C)?(BRIDGE)?$)}
 + title: String {NotBlank}
 + finalMode: Boolean {NotNull}
@@ -608,7 +614,7 @@ published by ^</panel_attributes>
 Application
 --
 + ticker: String {NotBlank,Unique}
-+ creation: Date {Temporal(TIMESTAMP), NotNull, Past}
++ creation: Date {Temporal(TIMESTAMP), Past}
 + status: String {NotBlank, Pattern(^(pending)?(accepted)?(rejected)?$)}
 + statement: String {NotBlank,Column(length = 1024)}
 + investmentOffer: Money {Valid,NotNull}
@@ -664,7 +670,7 @@ consisting of v</panel_attributes>
     <coordinates>
       <x>1148</x>
       <y>924</y>
-      <w>168</w>
+      <w>252</w>
       <h>84</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
@@ -690,7 +696,7 @@ AccountingRecord
 --
 + title: String {NotBlank}
 + draft: Boolean {NotNull}
-+ creation: Date {Temporal(TIMESTAMP), NotNull, Past}
++ creation: Date {Temporal(TIMESTAMP), Past}
 + Body: String {NotBlank}
 </panel_attributes>
     <additional_attributes/>
@@ -763,7 +769,7 @@ m2=0..1
 Message
 --
 + title: String {NotBlank}
-+ creation: Date {Temporal(TIMESTAMP), NotNull, Past}
++ creation: Date {Temporal(TIMESTAMP), Past}
 + tags: String
 + body: String {NotBlank,Column(length = 1024)}
 </panel_attributes>
